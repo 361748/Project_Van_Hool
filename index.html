@@ -34,39 +34,27 @@
     display: inline-block;
     margin-bottom: 10px;
   }
-    .foto_centraal {
-    display: inline-block; /* Zorgt dat de container niet breder wordt dan de afbeelding */
-    text-align: left;
-    max-width: 100%; /* Optioneel: voor responsiviteit */
-  }
 
-  .foto_centraal img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;     /* Centreren */
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  figure {
+    display: table;
+    margin: 0px; /* adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
   }
-
-  .foto_centraal p {
-    text-align: left;
-    font-style: italic;
-    margin-top: 5px;
-    font-size: 0.9em;
-    color: #666;
-    max-width: 100%;   /* Belangrijk: beperkt de breedte tot de container */
-    word-wrap: break-word; /* Zorgt dat lange woorden worden afgebroken */
-    padding: 0;
-    margin: 0;
-  }
-</style>
+  figcaption {
+      display: table-caption;
+      caption-side: bottom;
+      font-family: Arial, sans-serif;
+      font-style: italic;
+  }  
+  
+  </style>
 </head>
 <body>
-  <h1>Project Van Hool Blog</h1>
+  <h1>Project Van Hool - Blog</h1>
   <article>
-  <h2>Waarom ik een bus heb gekocht</h2>
-  <span class="date">vrijdag 1 september 2023</span> 
+  <h2>1 - Waarom ik een bus heb gekocht</h2>
+  <span class="date">1 september 2023</span> 
   <p>Voordat ik jullie meeneem in mijn project, zal ik nog even kort toelichten waarom ik eigenlijk een bus heb gekocht. Er is namelijk nog wel een en ander aan vooraf gegaan.</p>
 
   <h3>Woningmarkt</h3>
@@ -77,53 +65,94 @@
 
   <h3>Foto’s van de motorklipperaak "Metamorfose"</h3>
   <p>Hieronder een aantal foto's van de motorklipperaak "Metamorfose", die ik heb bekeken en waar ik een stukje in mocht varen van de eigenaar.</p>
-
-  <div class="foto_centraal">
+  
+  <figure>
     <img src="Foto's/Metamorfose 1.jpg" alt="Metamorfose 1.jpg" width="600">
-    <p><em>Skipper Felix aan het stuur van de Metamorfose :). Bijzonder sturen, een stalen schip van 18,56 meter lang, 32 ton zwaar en zonder boegschroef.</em></p>
-  </div>
+    <figcaption>Skipper Felix aan het stuur van de Metamorfose :). Bijzonder sturen, een stalen schip van 18,56 meter lang, 32 ton zwaar en zonder boegschroef.</figcaption>
+  </figure>
   
-  <div class="foto_centraal">
+  <figure>
     <img src="Foto's/Metamorfose 2.jpg" alt="Metamorfose 2.jpg" width="600">
-  </div>
-  
-  <div class="foto_centraal">
+    <figure>
+      
+  <figure>
     <img src="Foto's/Metamorfose 3.jpg" alt="Metamorfose 3.jpg" width="600">
-  </div>
-
-  <div class="foto_centraal">
-    <img src="Foto's/Metamorfose 4.jpg" alt="Metamorfose 4.jpg" width="600">
-    <p><em>De kajuit</em></p>
-  </div>
-
-  <div class="foto_centraal">
-    <img src="Foto's/Metamorfose 5.jpg" alt="Metamorfose 5,jpg" width="600">
-    <p><em>Gedateerde keuken</em></p>
-  </div>
-
-  <div class="foto_centraal">
-    <img src="Foto's/Metamorfose 6.jpg" alt="Metamorfose 6.jpg" width="600">
-    <p><em>De woonkamer, gedateerd, maar dat valt te verbouwen. Veel licht, genoeg ruimte en stahoogte</em></p>
-  </div>
+  </figure>
   
-  <div class="foto_centraal">
-    <img src="Foto's/Metamorfose 7.jpg" alt="Metamorfose 7.jpg" width="600">
-    <p><em>4 slaapkamers (hutten) met maar liefst 8 slaapplaatsen. Veel potentiële ruimte met een andere indeling</em></p>
-  </div>
+  <figure>
+    <img src="Foto's/Metamorfose 4.jpg" alt="Metamorfose 4.jpg" width="600">
+    <figcaption>De kajuit</figcaption>
+  </figure>
 
-  <div class="foto_centraal">
+  <figure>
+    <img src="Foto's/Metamorfose 5.jpg" alt="Metamorfose 5,jpg" width="600">
+    <figcaption>Gedateerde keuken</figcaption>
+  </figure>
+
+  <figure>
+    <img src="Foto's/Metamorfose 6.jpg" alt="Metamorfose 6.jpg" width="600">
+    <figcaption>De woonkamer, gedateerd, maar dat valt te verbouwen. Veel licht, genoeg ruimte en stahoogte</figcaption>
+  </figure>
+
+  <figure>
+    <img src="Foto's/Metamorfose 7.jpg" alt="Metamorfose 7.jpg" width="600">
+    <figcaption>4 slaapkamers (hutten) met maar liefst 8 slaapplaatsen. Veel potentiële ruimte met een andere indeling</figcaption>
+  </figure>
+
+  <figure>
     <img src="Foto's/Metamorfose 8.jpg" alt="Metamorfose 8.jpg" width="600">
-  </div>
+  </figure>
 
 <h3>Wonen in een vrachtwagen</h3>
 <p>Na de oriëntatie op schepen begon ik me te oriënteren op vrachtwagens. Daar zitten een aantal voordelen aan ten opzichte van een schip. Zo zijn ze een stuk goedkoper, ben je niet afhankelijk van ligplaatsen en ben je een stuk mobieler. Daarnaast heeft een vrachtwagen een recht-toe-recht-aan laadbak die je eenvoudig kunt isoleren en inrichten. Ook zijn alle kanten goed bereikbaar en dat maakt het onderhoud makkelijker. Ik was al een beetje aan het spelen met een indeling in mijn CAD programma:</p>
 
-  <div class="foto_centraal">
-    <img src="Foto's/CAD vracht wagen.jpg" alt="CAD vrachtwagen.jpg" width="600">
-    <p><em>Wat modellering gedaan in CAD</em></p>
-  </div>
- 
+  <figure>
+    <img src="Foto's/CAD vrachtwagen.jpg" alt="CAD vrachtwagen.jpg" width="600">
+    <figcaption>3D model gemaakt in CAD</figcaption>
+  </figure>
+  
   <p>Maar ik liep steeds tegen dezelfde beperking aan: ruimtegebrek. Ruimtegebrek? Bij een vrachtwagen? zul je misschien denken. Maar mijn plan is niet om er af en toe mee op vakantie te gaan. Mijn plan is om er in te gaan wonen. En als je ergens in wil wonen, dan moet je je niet opgesloten voelen. De één heeft minder ruimte nodig dan de ander, maar ik wist dat ik hiermee niet tevreden zou zijn. Daarbij speelt de cabine van de vrachtwagen een grote rol. Deze is gescheiden van de laadbak, wat ten koste gaat van de ruimte. Een doorgang van de cabine naar de laadbak maken zou misschien kunnen, maar dit zou wel een technische uitdaging worden. Was er maar een voertuig waarbij het interieur uit één grote ruimte bestaat....</p>
+  
+  <h2>2 - Het begin: de Marktplaatsadvertentie</h2>
+  <span class="date">17 oktober 2023</span> 
+  <p>Het begin... de Marktplaatsadvertentie. Ik kwam bij toeval een advertentie tegen waarin een bus werd aangeboden. Ik dacht dat is grappig... Het ging om een Van Hool T815 touringcar/bus uit 1982. Zie hier de foto's van de Marktplaatsadvertentie:</p>
+  
+  <figure>
+    <caption><b>De buitenkant</b></caption>
+    <img src="Foto's/MPadv1.jpg" alt="missing" width="600">
+  </figure>
+  <figure>
+    <img src="Foto's/MPadv2.jpg" alt="missing" width="600">
+  </figure>
+  <figure>
+    <img src="Foto's/MPadv3.jpg" alt="missing" width="600">
+  </figure>
+  <figure>
+    <caption><b>De binnenkant</b></caption>
+    <img src="Foto's/MPadv4.jpg" alt="missing.jpg" width="600">
+    <figcaption>Welkom, kom binnen...</figcaption>
+  </figure>
+  <figure>
+    <img src="Foto's/MPadv5.jpg" alt="missing.jpg" width="600">
+    <figcaption>De cockpit</figcaption>
+  </figure>
+  <figure>
+    <img src="Foto's/MPadv6.jpg" alt="missing.jpg" width="600">
+    <figcaption>Binnen waren nog 8 van de 48 stoelen over, welke voorin de bus tegenover elkaar waren gemonteerd. Achterin de bus waren stapelbedden gebouwd van houten balken en stalen bedbodems. Verder zijn te vinden: een koelkast zonder deur, vol met water en flessen drank en een oud keukenblok.</figcaption>
+  </figure>
+  <figure>
+    <img src="Foto's/MPadv7.jpg" alt="missing.jpg" width="600">
+    <figcaption>De kilometerteller telt maar liefst 692.832 gelopen kilometers. Voor een bus niet gek, omdat ze goed en degelijk ontworpen zijn.</figcaption>
+  </figure>
+  <figure>
+    <img src="Foto's/MPadv8.jpg" alt="missing.jpg" width="600">
+    <figcaption>Prima profieltje, nagenoeg nieuwe banden.</figcaption>
+  </figure>
+  <figure>
+    <img src="Foto's/MPadv9.jpg" alt="missing.jpg" width="600">
+    <figcaption>Het kloppend hart van de Van Hool, de M.A.N. (Maschinenfabrik Augsburg-Nürnberg Aktiengesellschaft) met 6 cilinders in lijn, 11410cc en turbo, goed voor een vermogen van 280 PK. De motor drijft met behulp van v-snaren de radiator (links), de compressor voor de luchtvoorziening van de bus (direct rechts vd motor) en de airco-compressor (helemaal rechts) aan.</figcaption>
+  </figure>
+
 </article>
 </body>
 </html>
