@@ -34,6 +34,12 @@
     display: inline-block;
     margin-bottom: 10px;
   }
+    .foto_centraal {
+    display: inline-block; /* Zorgt dat de container niet breder wordt dan de afbeelding */
+    text-align: left;
+    max-width: 100%; /* Optioneel: voor responsiviteit */
+  }
+
   .foto_centraal img {
     max-width: 100%;
     height: auto;
@@ -42,15 +48,17 @@
     border: 1px solid #ddd;
     border-radius: 4px;
   }
+
   .foto_centraal p {
     text-align: left;
     font-style: italic;
     margin-top: 5px;
     font-size: 0.9em;
     color: #666;
-    display: block;
-    max-width: 0 block;
-    margin-left: 0;
+    max-width: 100%;   /* Belangrijk: beperkt de breedte tot de container */
+    word-wrap: break-word; /* Zorgt dat lange woorden worden afgebroken */
+    padding: 0;
+    margin: 0;
   }
 </style>
 </head>
