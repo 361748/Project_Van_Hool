@@ -13,6 +13,11 @@
     color: #2c3e50;
   }
 
+  /* Ensure anchored headings are visible (offset for any fixed header) */
+  h2, h3 {
+    scroll-margin-top: 1.5rem;
+  }
+
   img {
     max-width: 100%;
     height: auto;
@@ -113,8 +118,8 @@
     color: white;
     border: none;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     font-size: 24px;
     cursor: pointer;
     z-index: 1000;
