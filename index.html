@@ -7,38 +7,141 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<!-- script for loading table of contents from seperate html file and add "Nieuwe Update" block -->
-  <script>
-    // Load table of contents
-    fetch('table_of_contents.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('table-of-contents').innerHTML = html;
-        setupNewUpdateBadges();
-      })
-      .catch(error => {
-        console.log('Error loading table of contents:', error);
-        document.getElementById('table-of-contents').innerHTML = 
-          '<p>Table of contents</p>';
+<script>
+  function setupNewUpdateBadges() {
+    const badges = document.querySelectorAll('.new-update-badge');
+    
+    badges.forEach(badge => {
+      badge.addEventListener('click', function() {
+        const link = this.getAttribute('data-link');
+        if (link) {
+          const element = document.querySelector(link);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
       });
+    });
+  }
 
-    function setupNewUpdateBadges() {
-      const badges = document.querySelectorAll('.new-update-badge');
-      
-      badges.forEach(badge => {
-        // Get the link associated with this badge
-        const link = badge.previousElementSibling;
-        
-      });
-    }
-  </script>
+  // Run setup when DOM is ready
+  document.addEventListener('DOMContentLoaded', setupNewUpdateBadges);
+</script>
 
 <body>
   
   <h1>Project Van Hool - Blog</h1>
   
-  <!-- load table of contents -->
-  <div id="table-of-contents"></div> 
+  <!-- Table of Contents -->
+  <div class="table-of-contents">
+<h2 class="toc-heading">Inhoud:</h2>
+<div class="headings-container">
+    <ul>
+    <li>
+        <a href="#waarom_ik_een_bus_heb_gekocht" class="heading">Waarom ik een bus heb gekocht</a>
+        <ul>
+        <li>
+            <a href="#woningmarkt" class="sub-heading">Woningmarkt</a>
+        </li>
+        <li>
+            <a href="#wonen_op_een_schip" class="sub-heading">Wonen op een schip</a>
+        </li>
+        <li>
+            <a href="#fotos_van_de_motorklipperaak_metamorfose" class="sub-heading">Foto's van de motorklipperaak "Metamorfose"</a>
+        </li>
+        <li>
+            <a href="#wonen_in_een_vrachtwagen" class="sub-heading">Wonen in een vrachtwagen</a>
+        </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#het_begin_de_marktplaatsadvertentie" class="heading">Het begin: de Marktplaatsadvertentie</a>
+    </li>
+    <li>
+        <a href="#de_bus_bekijken" class="heading">De bus bekijken</a>
+    </li>
+    <li>
+        <a href="#verkocht" class="heading">Verkocht!</a>
+    </li>
+    <li>
+        <a href="#het_sloopwerk" class="heading">Het sloopwerk</a>
+        <ul>
+        <li>
+            <a href="#asbest" class="sub-heading">ASBEST?</a>
+        </li>
+        <li>
+            <a href="#onder_in_de_bus" class="sub-heading">Onder in de bus</a>
+        </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#bezoek_aan_stichting_veteraan_autobussen" class="heading">Bezoek aan Stichting Veteraan Autobussen</a>
+    </li>
+    <li>
+        <a href="#nieuwe_busindeling" class="heading">Nieuwe busindeling</a>
+    </li>
+    <li>
+        <a href="#webasto_standkachel_reviseren" class="heading">Webasto standkachel reviseren</a>
+        <ul>
+        <li>
+            <a href="#wat_is_een_standkachel" class="sub-heading">Wat is een standkachel?</a>
+        </li>
+        <li>
+            <a href="#de_revisie" class="sub-heading">De revisie</a>
+        </li>
+        <li>
+            <a href="#reparatie_van_de_vloer" class="sub-heading">Reparatie van de vloer</a>
+        </li>
+        <li>
+            <a href="#monteren_en_aansluiten_van_de_kachel" class="sub-heading">Monteren en aansluiten van de kachel</a>
+        </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#de_vloer" class="heading">De vloer</a>
+        <span class="new-update-badge" data-link="#het_dak">Nieuwe Update!</span>
+    </li>
+    <li>
+        <a href="#vrachtwagenrijbewijs_gehaald" class="heading">Vrachtwagenrijbewijs gehaald!</a>
+    </li>
+    <li>
+        <a href="#zonneluifel_demonteren" class="heading">Zonneluifel demonteren</a>
+    </li>
+    <li>
+        <a href="#het_dak" class="heading">Het dak</a>
+        <ul>
+        <li>
+            <a href="#roest_op_de_zijkant" class="sub-heading">Roest op de zijkant</a>
+        </li>
+        <li>
+            <a href="#slopen_van_de_airco" class="sub-heading">Slopen van de airco</a>
+        </li>
+        <li>
+            <a href="#airco_gaten_dichten" class="sub-heading">Airco gaten dichten</a>
+        </li>
+        <li>
+            <a href="#voorbereidingen_voor_het_verven_van_het_dak" class="sub-heading">Voorbereidingen voor het verven van het dak</a>
+        </li>
+        <li>
+            <a href="#het_verven_van_het_dak" class="sub-heading">Het verven van het dak</a>
+        </li>
+        <li>
+            <a href="#verder_met_het_verven_van_het_dak" class="sub-heading">Verder met het verven van het dak</a>
+        </li>
+        <li>
+            <a href="#het_aflakken_van_het_dak" class="sub-heading">Het aflakken van het dak</a>
+        </li>
+        <li>
+            <a href="#het_resultaat" class="sub-heading">Het resultaat!</a>
+        </li>
+        <li>
+            <a href="#wordt_vervolgd" class="sub-heading">Wordt vervolgd...</a>
+        </li>
+        </ul>
+    </li>
+    </ul>
+</div>
+</div> 
 
   <article>
   <h2 id="waarom_ik_een_bus_heb_gekocht" class="heading">1 - Waarom ik een bus heb gekocht</h2>
