@@ -6,17 +6,12 @@
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
   }
 
   h1, h2, h3 {
     color: #2c3e50;
   }
-
-  /* Ensure anchored headings are visible (offset for any fixed header) */
-  /* h2, h3 {
-    scroll-margin-top: 1.5rem;
-  } */
 
   img {
     max-width: 100%;
@@ -24,10 +19,6 @@
     display: block;
     margin: 10px auto;
   }
-
-  /* img[loading="lazy"] {
-    background-color: #f0f0f0;
-  } */
 
   .date {
     background-color: #ccc;
@@ -66,7 +57,7 @@
     font-size: 95%;
     margin-bottom: 1em;
     padding: 20px;
-    width: auto;
+    width: 100%;
     counter-reset: section;
   }
 
