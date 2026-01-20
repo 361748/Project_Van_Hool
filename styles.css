@@ -56,9 +56,8 @@
     display: table;
     font-size: 95%;
     margin-bottom: 1em;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0px;
+    width: auto; 
     counter-reset: section;
   }
 
