@@ -6,7 +6,7 @@
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
   }
 
   h1, h2, h3 {
@@ -25,9 +25,9 @@
     margin: 10px auto;
   }
 
-  img[loading="lazy"] {
+  /* img[loading="lazy"] {
     background-color: #f0f0f0;
-  }
+  } */
 
   .date {
     background-color: #ccc;
