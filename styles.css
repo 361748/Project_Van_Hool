@@ -54,8 +54,9 @@
     background: #f9f9f9 none repeat scroll 0 0;
     border: 1px solid #aaa;
     display: table;
-    font-size: 100%;
+    font-size: 95%;
     margin-bottom: 1em;
+    margin: 10px;
     margin-left: auto;
     margin-right: auto;
     counter-reset: section;
@@ -63,7 +64,7 @@
 
   .toc_title {
     font-weight: 700;
-    text-align: center;
+    text-align: left;
   }
 
   #toc_container li, #toc_container ul, #toc_container ul li{
