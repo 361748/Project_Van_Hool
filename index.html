@@ -9,20 +9,23 @@
 
 <script>
   function setupNewUpdateBadges() {
-    const badges = document.querySelectorAll('.new-update-badge');
-    
-    badges.forEach(badge => {
-      badge.addEventListener('click', function() {
-        const link = this.getAttribute('data-link');
-        if (link) {
-          const element = document.querySelector(link);
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-          }
+  const badges = document.querySelectorAll('.new-update-badge');
+  
+  badges.forEach(badge => {
+    badge.addEventListener('click', function(event) {
+      event.stopPropagation(); // Prevent the click from reaching the parent <a>
+      event.preventDefault(); // Prevent default link behavior
+      
+      const link = this.getAttribute('data-link');
+      if (link) {
+        const element = document.querySelector(link);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
         }
-      });
+      }
     });
-  }
+  });
+}
 
   // Run setup when DOM is ready
   document.addEventListener('DOMContentLoaded', setupNewUpdateBadges);
