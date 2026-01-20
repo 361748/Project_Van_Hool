@@ -14,9 +14,9 @@
   }
 
   /* Ensure anchored headings are visible (offset for any fixed header) */
-  h2, h3 {
+  /* h2, h3 {
     scroll-margin-top: 1.5rem;
-  }
+  } */
 
   img {
     max-width: 100%;
@@ -59,30 +59,46 @@
 
   /* table of contents configuration */
 
-  .table-of-contents {
+  #toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
     counter-reset: section;
   }
 
-  .table-of-contents a {
+  .toc_title {
+    font-weight: 700;
+    text-align: center;
+  }
+
+  #toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+  }
+
+  #toc_container a {
     text-decoration: None;
   }
 
-  .table-of-contents ul {
+  #toc_container ul {
     padding-left: 0px;
     list-style: none;
   }
 
-  .table-of-contents .heading::before {
+  #toc_container .toc_list > li > a::before {
     content: counter(section) ". ";
   }
   
-  .table-of-contents .heading {
+  #toc_container .toc_list > li > a {
     text-transform: uppercase;
     counter-increment: section;
     counter-reset: sub-section;
   }
 
-  .table-of-contents .sub-heading {
+  #toc_container ul ul li a {
     padding-left: 10px;
   }
 
