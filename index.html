@@ -3,67 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Van Hool</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<script>
-  function setupNewUpdateBadges() {
-  const badges = document.querySelectorAll('.new-update-badge');
-  
-  badges.forEach(badge => {
-    badge.addEventListener('click', function(event) {
-      event.stopPropagation(); // Prevent the click from reaching the parent <a>
-      event.preventDefault(); // Prevent default link behavior
-      
-      const link = this.getAttribute('data-link');
-      if (link) {
-        const element = document.querySelector(link);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
-    });
-  });
-}
-
-  // Run setup when DOM is ready
-  document.addEventListener('DOMContentLoaded', setupNewUpdateBadges);
-
-  // Show button when page is scrolled down
-  window.addEventListener('scroll', function() {
-    const btn = document.getElementById('backToTopBtn');
-    if (btn) {
-      if (window.pageYOffset > 300) {
-        btn.style.display = 'block';
-      } else {
-        btn.style.display = 'none';
-      }
-    }
-  });
-
-  // Scroll to top when button is clicked
-  document.addEventListener('DOMContentLoaded', function() {
-    const btn = document.getElementById('backToTopBtn');
-    if (btn) {
-      btn.addEventListener('click', function() {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      });
-    }
-  });
-</script>
-
 <body>
   
   <h1>Project Van Hool - Blog</h1>
-  
+
   <!-- Table of Contents -->
   <div id="toc_container">
     <p class="toc_title">Inhoud:</p>
-    <ul class="toc_list">
+    <ul class="toc_list" role="list">
       <li>
         <a href="#waarom_ik_een_bus_heb_gekocht">Waarom ik een bus heb gekocht</a>
         <ul>
@@ -118,115 +70,115 @@
   </div> 
 
   <article>
-  <h2 id="waarom_ik_een_bus_heb_gekocht" class="heading">1 - Waarom ik een bus heb gekocht</h2>
+  <h2 id="waarom_ik_een_bus_heb_gekocht">1 - Waarom ik een bus heb gekocht</h2>
   <span class="date">1 september 2023</span> 
   <p>Voordat ik jullie meeneem in mijn project, zal ik nog even kort toelichten waarom ik eigenlijk een bus heb gekocht. Er is namelijk nog wel een en ander aan vooraf gegaan.</p>
 
-  <h3 id="woningmarkt" class="sub-heading">Woningmarkt</h3>
+  <h3 id="woningmarkt">Woningmarkt</h3>
   <p>Gezien de woningmarkt in Nederland momenteel ronduit belachelijk is, is het kopen van een woning erg lastig. Als alleenstaande met een studieschuld is het gewoon onmogelijk. Het huren van een woning is ook geen gesneden koek. Als je geluk hebt kun je binnen redelijke tijd aanspraak maken op een sociale huurwoning. De andere optie is de particuliere huursector, waar je gewoon uitgekleed wordt. Het geld zie je bovendien nooit weer, zoals dat (deels) wel bij een koophuis het geval is.</p>
 
-  <h3 id="wonen_op_een_schip" class="sub-heading">Wonen op een schip</h3>
+  <h3 id="wonen_op_een_schip">Wonen op een schip</h3>
   <p>Ik houd graag van out of the box denken en dacht: zijn er geen andere opties? Ik ken mensen die (deels) leven op een zeilboot en dat inspireerde me. Ik begon me te verdiepen in het wonen op een schip. Ik heb gekeken naar woonboten, zeilboten en motorboten. Ik zag het ergens wel voor me, maar er zitten een aantal nadelen aan het kopen van en het wonen op een schip. Zo ben je bijvoorbeeld minder mobiel dan een wegvoertuig. Daarnaast heb je te maken met relatief veel onderhoud, waarvoor het schip van tijd tot tijd uit water moet. En dat kost geld. Maar wat het plan definitief in de doofpot stopte, is het regelen van een vaste ligplek. Je bent afhankelijk van een vaste ligplaats en deze zijn schaars en duur (rond de stad). Dit maakt het plan voor mij oninteressant.</p>
 
-  <h3 id="fotos_van_de_motorklipperaak_metamorfose" class="sub-heading">Foto’s van de motorklipperaak "Metamorfose"</h3>
+  <h3 id="fotos_van_de_motorklipperaak_metamorfose">Foto’s van de motorklipperaak "Metamorfose"</h3>
   <p>Hieronder een aantal foto's van de motorklipperaak "Metamorfose", die ik heb bekeken en waar ik een stukje in mocht varen van de eigenaar.</p>
   
   <figure>
-    <img loading="lazy" src="Media/metamorfose/Metamorfose 1.jpg" alt="Metamorfose 1.jpg" width="800">
+    <img src="Media/metamorfose/Metamorfose 1.jpg" alt="Metamorfose 1.jpg" width="800">
     <figcaption>Skipper Felix aan het stuur van de Metamorfose :). Bijzonder sturen, een stalen schip van 18,56 meter lang, 32 ton zwaar en zonder boegschroef.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/metamorfose/Metamorfose 2.jpg" alt="Metamorfose 2.jpg" width="800">
+    <img src="Media/metamorfose/Metamorfose 2.jpg" alt="Metamorfose 2.jpg" width="800">
   </figure>
       
   <figure>
-    <img loading="lazy" src="Media/metamorfose/Metamorfose 3.jpg" alt="Metamorfose 3.jpg" width="800">
+    <img src="Media/metamorfose/Metamorfose 3.jpg" alt="Metamorfose 3.jpg" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/metamorfose/Metamorfose 4.jpg" alt="Metamorfose 4.jpg" width="800">
+    <img src="Media/metamorfose/Metamorfose 4.jpg" alt="Metamorfose 4.jpg" width="800">
     <figcaption>De kajuit.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/metamorfose/Metamorfose 5.jpg" alt="Metamorfose 5.jpg" width="800">
+    <img src="Media/metamorfose/Metamorfose 5.jpg" alt="Metamorfose 5.jpg" width="800">
     <figcaption>Gedateerde keuken.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/metamorfose/Metamorfose 6.jpg" alt="Metamorfose 6.jpg" width="800">
+    <img src="Media/metamorfose/Metamorfose 6.jpg" alt="Metamorfose 6.jpg" width="800">
     <figcaption>De woonkamer, gedateerd, maar dat valt te verbouwen. Veel licht, genoeg ruimte en stahoogte.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/metamorfose/Metamorfose 7.jpg" alt="Metamorfose 7.jpg" width="800">
+    <img src="Media/metamorfose/Metamorfose 7.jpg" alt="Metamorfose 7.jpg" width="800">
     <figcaption>4 slaapkamers (hutten) met maar liefst 8 slaapplaatsen. Veel potentiële ruimte met een andere indeling.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/metamorfose/Metamorfose 8.jpg" alt="Metamorfose 8.jpg" width="800">
+    <img src="Media/metamorfose/Metamorfose 8.jpg" alt="Metamorfose 8.jpg" width="800">
   </figure>
 
-<h3 id="wonen_in_een_vrachtwagen" class="sub-heading">Wonen in een vrachtwagen</h3>
+<h3 id="wonen_in_een_vrachtwagen">Wonen in een vrachtwagen</h3>
 <p>Na de oriëntatie op schepen begon ik me te oriënteren op vrachtwagens. Daar zitten een aantal voordelen aan ten opzichte van een schip. Zo zijn ze een stuk goedkoper, ben je niet afhankelijk van ligplaatsen en ben je een stuk mobieler. Daarnaast heeft een vrachtwagen een recht-toe-recht-aan laadbak die je eenvoudig kunt isoleren en inrichten. Ook zijn alle kanten goed bereikbaar en dat maakt het onderhoud makkelijker. Ik was al een beetje aan het spelen met een indeling in mijn CAD programma:</p>
 
   <figure>
-    <img loading="lazy" src="Media/CAD vrachtwagen.jpg" alt="CAD vrachtwagen.jpg" width="800">
+    <img src="Media/CAD vrachtwagen.jpg" alt="CAD vrachtwagen.jpg" width="800">
     <figcaption>3D model gemaakt in CAD.</figcaption>
   </figure>
   
   <p>Maar ik liep steeds tegen dezelfde beperking aan: ruimtegebrek. Ruimtegebrek? Bij een vrachtwagen? zul je misschien denken. Maar mijn plan is niet om er af en toe mee op vakantie te gaan. Mijn plan is om er in te gaan wonen. En als je ergens in wil wonen, dan moet je je niet opgesloten voelen. De één heeft minder ruimte nodig dan de ander, maar ik wist dat ik hiermee niet tevreden zou zijn. Daarbij speelt de cabine van de vrachtwagen een grote rol. Deze is gescheiden van de laadbak, wat ten koste gaat van de ruimte. Een doorgang van de cabine naar de laadbak maken zou misschien kunnen, maar dit zou wel een technische uitdaging worden. Was er maar een voertuig waarbij het interieur uit één grote ruimte bestaat....</p>
   
-  <h2 id="het_begin_de_marktplaatsadvertentie" class="heading">2 - Het begin: de Marktplaatsadvertentie</h2>
+  <h2 id="het_begin_de_marktplaatsadvertentie">2 - Het begin: de Marktplaatsadvertentie</h2>
   <span class="date">17 oktober 2023</span> 
   <p>Het begin... de Marktplaatsadvertentie. Ik kwam bij toeval een advertentie tegen waarin een bus werd aangeboden. Ik dacht dat is grappig... Het ging om een Van Hool T815 touringcar/bus uit 1982. Zie hier de foto's van de Marktplaatsadvertentie:</p>
   
   <figure>
-    <h3 id="de_buitenkant" class="sub-heading">De buitenkant</h3>
-    <img loading="lazy" src="Media/marktplaats/MPadv1.jpg" alt="missing" width="800">
+    <h3 id="de_buitenkant">De buitenkant</h3>
+    <img src="Media/marktplaats/MPadv1.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/marktplaats/MPadv2.jpg" alt="missing" width="800">
+    <img src="Media/marktplaats/MPadv2.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/marktplaats/MPadv3.jpg" alt="missing" width="800">
+    <img src="Media/marktplaats/MPadv3.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <h3 id="de_binnenkant" class="sub-heading">De binnenkant</h3>
-    <img loading="lazy" src="Media/marktplaats/MPadv4.jpg" alt="missing.jpg" width="800">
+    <h3 id="de_binnenkant">De binnenkant</h3>
+    <img src="Media/marktplaats/MPadv4.jpg" alt="missing.jpg" width="800">
     <figcaption>Welkom, kom binnen...</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/marktplaats/MPadv5.jpg" alt="missing.jpg" width="800">
+    <img src="Media/marktplaats/MPadv5.jpg" alt="missing.jpg" width="800">
     <figcaption>De cockpit.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/marktplaats/MPadv6.jpg" alt="missing.jpg" width="800">
+    <img src="Media/marktplaats/MPadv6.jpg" alt="missing.jpg" width="800">
     <figcaption>Binnen waren nog 8 van de 48 stoelen over, welke voorin de bus tegenover elkaar waren gemonteerd. Achterin de bus waren stapelbedden gebouwd van houten balken en stalen bedbodems. Verder zijn te vinden: een koelkast zonder deur, vol met water en flessen drank en een oud keukenblok.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/marktplaats/MPadv7.jpg" alt="missing.jpg" width="800">
+    <img src="Media/marktplaats/MPadv7.jpg" alt="missing.jpg" width="800">
     <figcaption>De kilometerteller telt maar liefst 692.832 gelopen kilometers. Voor een bus niet gek, omdat ze goed en degelijk ontworpen zijn.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/marktplaats/MPadv8.jpg" alt="missing.jpg" width="800">
+    <img src="Media/marktplaats/MPadv8.jpg" alt="missing.jpg" width="800">
     <figcaption>Prima profieltje, nagenoeg nieuwe banden.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/marktplaats/MPadv9.jpg" alt="missing.jpg" width="800">
+    <img src="Media/marktplaats/MPadv9.jpg" alt="missing.jpg" width="800">
     <figcaption>Het kloppend hart van de Van Hool, de M.A.N. (Maschinenfabrik Augsburg-Nürnberg Aktiengesellschaft) met 6 cilinders in lijn, 11410cc en turbo, goed voor een vermogen van 280 PK. De motor drijft met behulp van v-snaren de radiator (links), de compressor voor de luchtvoorziening van de bus (direct rechts vd motor) en de airco-compressor (helemaal rechts) aan.</figcaption>
   </figure>
 
-  <h2 id="de_bus_bekijken" class="heading">3 - De bus bekijken</h2>
+  <h2 id="de_bus_bekijken">3 - De bus bekijken</h2>
   <span class="date">21 oktober 2023</span> 
   <p>Na contact met de eigenaar reisde ik met paps naar Haarle (bij Raalte) af om de bus te bekijken. Op het adres troffen we een boerenbedrijf aan. De eigenaar bleek een jongeman te zijn die de bus met zijn vriendengroep heeft gekocht om ermee naar de Zwarte Cross te gaan. Na 2 jaar vonden ze het mooi geweest en met geen andere plannen voor de bus, besloten ze hem te verkopen.</p>
   <p>Wat opviel was dat de bus voor zijn leeftijd technisch niet heel slecht oogde. De buitenkant is gemaakt van aluminium, dus heb je daar minimaal te maken met corrosie. Binnen leek het ook redelijk netjes en origineel, maar de jongens hadden er een "indrukwekkende" constructie van stapelbedden ingebouwd met CLS en oude metalen bedbodems. Deze constructie was vakkundig overal en nergens aan de bus vastgeschroefd met spaanplaatschroeven. In alle soorten en maten.</p>  
@@ -236,11 +188,11 @@
   <p>Ik heb die dag geen foto's gemaakt. We hebben wel een rondje gereden in de bus. Wat rijdt dat fantastisch! Omdat je als bestuurder vóór de voorwielen zit (zie foto), heb je het gevoel alsof je over de weg zweeft. Erg leuk. Verder is de bus natuurlijk lucht geveerd, wat bijdraagt aan een comfortabele rit.</p>
 
   <figure>
-    <img loading="lazy" src="Media/voordewielen.jpg" alt="missing.jpg" width="800">
+    <img src="Media/voordewielen.jpg" alt="missing.jpg" width="800">
     <figcaption>Als bestuurder zit je vóór het voorwiel (en hoog boven de grond).</figcaption>
   </figure>
     
-  <h2 id="verkocht" class="heading">4 - Verkocht!</h2>
+  <h2 id="verkocht">4 - Verkocht!</h2>
   <span class="date">12 november 2023</span> 
   <p>Na het bekijken van de bus op 21 oktober heb ik bij de eigenaar aangegeven dat ik een paar dagen nodig heb om wat meer informatie over te bus op te zoeken. Onder andere heb ik contact gehad met de fabrikant Van Hool zelf. Zij waren tot mijn grote dank bereid om elektrische schema's voor dit type bus met mij te delen.</p>
 
@@ -251,28 +203,28 @@
   <p>Op zondag 12 november reisde ik met pap en topper Stijn weer naar Haarle. Na het tellen van het geld en het bespreken van de overschrijving (zondag loketten niet open en online overschrijven werkte niet op dat moment), de hand schudden en...:</p>
 
   <figure>
-    <img loading="lazy" src="Media/verkocht/verkocht1.jpg" alt="missing.jpg" width="800">
+    <img src="Media/verkocht/verkocht1.jpg" alt="missing.jpg" width="800">
   </figure>
 
   <p>Nu de bus terugrijden naar huis. Met een maximum van 8 stoelen mag je een bus besturen met een vrachtwagenrijbewijs (vandaar het aantal overgebleven stoelen). Pa heeft een vrachtwagenrijbewijs en kon dus de bus naar huis rijden.</p>
 
   <figure>
-    <img loading="lazy" src="Media/verkocht/verkocht2.jpg" alt="missing.jpg" width="800">
+    <img src="Media/verkocht/verkocht2.jpg" alt="missing.jpg" width="800">
     <figcaption>Stijn reed achter ons aan.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/verkocht/verkocht3.jpg" alt="missing.jpg" width="800">
+    <img src="Media/verkocht/verkocht3.jpg" alt="missing.jpg" width="800">
     <figcaption>Even wat eten onderweg, ik trakteer!</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/verkocht/verkocht4.jpg" alt="missing.jpg" width="800">
+    <img src="Media/verkocht/verkocht4.jpg" alt="missing.jpg" width="800">
     <figcaption>Even poseren bij mijn nieuwe aankoop! Wat een ding nie?</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/verkocht/verkocht5.jpg" alt="missing.jpg" width="800">
+    <img src="Media/verkocht/verkocht5.jpg" alt="missing.jpg" width="800">
     <figcaption>Thuis heb ik de bus meteen getankt om een inschatting te krijgen van het verbruik. Resultaat: 82.5 km/22.52 L = verbruik van 1 liter diesel op 3.66 kilometer.</figcaption>
   </figure>
 
@@ -282,16 +234,16 @@
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/verkocht/verkocht7.jpg" alt="missing.jpg" width="800">
+    <img src="Media/verkocht/verkocht7.jpg" alt="missing.jpg" width="800">
     <figcaption>Thuis. Tja... en dan besef je pas hoe groot zo'n bus nu echt is. Het krijgen van de draai was geen eenvoudige taak. Na het verwijderen van een deel van het hek paste het maar net.. fiew...</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/verkocht/verkocht8.jpg" alt="missing.jpg" width="800">
+    <img src="Media/verkocht/verkocht8.jpg" alt="missing.jpg" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/verkocht/verkocht9.jpg" alt="missing.jpg" width="800">
+    <img src="Media/verkocht/verkocht9.jpg" alt="missing.jpg" width="800">
     <figcaption>Na wat manoeuvreerwerk staan we op plek! Fiat Ducato camper rechts ter vergelijking van de grootte :)</figcaption>
   </figure>
 
@@ -300,272 +252,272 @@
     <figcaption>Hij rookt wel een "beetje". Daar kijken we later even naar. Maar wat loopt die 6 cilinder mooi!!! Als muziek in mijn oren :).</figcaption>
   </figure>
 
-  <h2 id="het_sloopwerk" class="heading">5 - Het sloopwerk</h2>
+  <h2 id="het_sloopwerk">5 - Het sloopwerk</h2>
   <span class="date">13 november 2023</span> 
   <p>De eerste stap was om alle ouwe meuk en wat niet meer nodig is uit de bus te slopen. Ik had eerst nog niet helemaal bedacht tot hoe ver ik de bus ging strippen, maar al snel besloot ik dat ik de bus geheel ging strippen. Een boel werk, maar zo voorkom je verborgen gebreken en kun je met een schone lei beginnen. Dat voelt gewoon goed.</p>
   <p>Tijdens het slopen kwam ik er achter dat het materiaal dat gebruikt werd om het interieur te bouwen ook erg zwaar was. Gezien ik de nieuwe indeling zal bouwen met lichter materiaal dan het originele, resulteert dit ook nog eens in een flinke gewichtsbesparing.</p>
 
   <figure>
-    <h3 id="slopen_van_de_bedbodems" class="sub-heading">Slopen van de bedbodems</h3>
-    <img loading="lazy" src="Media/marktplaats/MPadv6.jpg" alt="missing" width="800">
+    <h3 id="slopen_van_de_bedbodems">Slopen van de bedbodems</h3>
+    <img src="Media/marktplaats/MPadv6.jpg" alt="missing" width="800">
     <figcaption>De beginsituatie.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop1.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop1.jpg" alt="missing" width="800">
     <figcaption>Eerst maar eens die domme bedbodems eruit.. Ze hadden ze overal en nergens vastgeschroefd. Door het dak, door de muren en door de vloer. Torx-, kruiskop- en gleufkopschroeven, maar ook de nodige houtdraadbouten mochten niet ontbreken.. Het was een mooi schroevenfeest.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop2.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop2.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop3.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop3.jpg" alt="missing" width="800">
     <figcaption>De bedbodems en de houten constructie gedemonteerd. Dat geeft al heel wat ruimte. Het hout komt later goed van pas (meenemen!). De bedbodems leveren bij de oudijzerboer een leuk zakcentje op (meenemen!).</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop4.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop4.jpg" alt="missing" width="800">
     <figcaption>De koelkast leegpompen die de jongens met water hadden gevuld. De buit: ongeopende(!) flessen drank. Niet mijn smaak, maargoed :)</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop5.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop5.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop6.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop6.jpg" alt="missing" width="800">
     <figcaption>Het hokje van het toilet.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop7.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop7.jpg" alt="missing" width="800">
     <figcaption>Het trappetje en de zijdeur naast het toilet.</figcaption>
   </figure>
 
   <figure>
-    <h3 id="overzicht" class="sub-heading">Overzicht</h3>
+    <h3 id="overzicht">Overzicht</h3>
     <span class="date">26 november 2023</span> 
     <p>Goed, de bedbodems zijn eruit. Wat hebben we tot zover?</p>
-    <img loading="lazy" src="Media/sloop/sloop8.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop8.jpg" alt="missing" width="800">
     <figcaption>De achterkant van de bus, gezien vanaf het midden. Zie ook de aluminium gleuven waarin de stoelen gemonteerd kunnen worden.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop9.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop9.jpg" alt="missing" width="800">
     <figcaption>De bus gezien vanaf de achterkant.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop10.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop10.jpg" alt="missing" width="800">
     <figcaption>Onder de inspectieluiken in de vloer gaat onze krachtpatser verschuild.</figcaption>
   </figure>
 
   <figure>
-    <h3 id="slopen_van_het_plafond" class="sub-heading">Slopen van het plafond</h3>
+    <h3 id="slopen_van_het_plafond">Slopen van het plafond</h3>
     <span class="date">28 november 2023</span> 
-    <img loading="lazy" src="Media/sloop/sloop11.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop11.jpg" alt="missing" width="800">
     <figcaption><p>Hier zijn pa en ik bezig met het slopen van de luchtkanalen. Hieruit stroomde warme of koude lucht naar beneden naar de passagiers. Dit was door de passagiers zelf te regelen. Van Hool had dit goed bekeken. Hierover later meer.</p>
     <p>Het grootste gedeelte van het interieur was bekleed met grijs tapijt. Het had zijn beste tijd wel gezien. God mag weten wat er allemaal mee is gebeurd. Het maakte het slopen er soms niet makkelijker op. Wanneer je het losrukte kwam er ook veel stof vrij. Niet zo best voor je longen!</p></figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop12.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop12.jpg" alt="missing" width="800">
     <figcaption>Een goed stofmasker is dan ook een fantastische investering! Op het masker zit een nieuw filter, rechts een vies filter.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop13.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop13.jpg" alt="missing" width="800">
     <figcaption>Eem de muts goed doen.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop14.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop14.jpg" alt="missing" width="800">
     <figcaption>We doen net of we het leuk hebben!</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop15.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop15.jpg" alt="missing" width="800">
     <figcaption>Er wordt wel hard gewerkt hoor! Een en ander voor het gemak even in kleinere stukken zagen.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop16.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop16.jpg" alt="missing" width="800">
     <figcaption>Ik heb me er over verbaasd hoeveel materiaal je uit zo'n bus sloopt! Binnen de kortste keren lag de bus weer vol met troep en moest er eerst opgeruimd worden.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop17.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop17.jpg" alt="missing" width="800">
     <figcaption>Minimaal 5 van deze bussen vol troep heb ik naar de stort gebracht! Bovenop de bus ligt sneeuw. Soms was het fris tijdens het slopen. Maar na 10 minuten slopen had ik het wel weer warm...</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop18.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop18.jpg" alt="missing" width="800">
     <figcaption>Opgeruimd staat netjes.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop19.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop19.jpg" alt="missing" width="800">
     <figcaption>Het plafond is nagenoeg kaal. Hier vanuit achter in de bus gezien.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop20.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop20.jpg" alt="missing" width="800">
     <figcaption>Van voor in de bus gezien. Trouwens, wees geen dief van je eigen portemonnee en koop geen verhuisdozen van de Action. Wat een kutdingen. Het karton is veel te dun. De bodem laat je zonder pardon in de steek en je mooie spulletjes liggen op de vloer..</figcaption>
   </figure>
 
   <figure>
-    <h3 id="slopen_van_de_wanden_en_de_vloer" class="sub-heading">Slopen van de wanden en de vloer</h3>
+    <h3 id="slopen_van_de_wanden_en_de_vloer">Slopen van de wanden en de vloer</h3>
     <p>Na het slopen van het plafond waren de wanden en de vloer aan de beurt. Deze zijn deugdelijk geconstrueerd door Van Hool en vergden enige moeite om eruit te slopen. Uit de wanden kwam een heleboel aluminium, goed voor een zakcentje bij de oudijzerboer (meenemen!).</p>
-    <img loading="lazy" src="Media/sloop/sloop21.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop21.jpg" alt="missing" width="800">
     <figcaption>Een deel van het ingeleverde aluminium.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop22.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop22.jpg" alt="missing" width="800">
     <figcaption>Een deel van het ingeleverde staal.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop23.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop23.jpg" alt="missing" width="800">
     <figcaption>Achterin de bus.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop24.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop24.jpg" alt="missing" width="800">
     <figcaption>Vanuit achter in de bus gezien.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop25.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop25.jpg" alt="missing" width="800">
     <figcaption>De vloer in het midden eruit. Hieronder lopen de leidingen en slangen van voor naar achteren toe. Denk aan koppelingbediening, luchtleidingen, brandstofleidingen, cv-leidingen, enzovoorts.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop26.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop26.jpg" alt="missing" width="800">
     <figcaption>De vloer in de cockpit eruit. De bestuurders- en bijrijdersstoel heb ik hier ook gedemonteerd. Onder de vloer ligt het reservewiel.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop27.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop27.jpg" alt="missing" width="800">
     <figcaption>Het slopen van de overige vloerplaten schiet ook al mooi op. Het gaat wel moeizaam. Hier is de achterkant van de bus te zien.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop28.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop28.jpg" alt="missing" width="800">
     <figcaption>Vloer achter het oude toilet eruit.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop29.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop29.jpg" alt="missing" width="800">
     <figcaption>Onder de vloer ontdekte ik een boilervat. Hierover later meer in een nieuwe post. </figcaption>
   </figure>
 
   <figure>
-    <h3 id="slopen_van_het_toilet" class="sub-heading">Slopen van het toilet</h3>
+    <h3 id="slopen_van_het_toilet">Slopen van het toilet</h3>
     <span class="date">13 januari 2024</span> 
-    <img loading="lazy" src="Media/sloop/sloop30.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop30.jpg" alt="missing" width="800">
     <figcaption>Tijd voor het toilet om te gaan. Ik zou het hokje eerst behouden, maar later besloot ik dat ik ook hier beter met een schone lei kon beginnen.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop31.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop31.jpg" alt="missing" width="800">
     <figcaption>Leuk detail: door het toilethokje liep een afvalbuis van boven naar beneden. Men kon vanuit de bus én vanuit het toilet afval in een gat in de muur deponeren. Het afval werd beneden opgevangen in een uitneembare bak. Deze kon dan geleegd worden en weer teruggeplaatst.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop32.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop32.jpg" alt="missing" width="800">
     <figcaption>In de gaten waar ooit de drankjes stonden vond ik de eerste schat (chips en muntgeld)! (meenemen!). </figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop33.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop33.jpg" alt="missing" width="800">
     <figcaption>Achter het toilet ontdekte ik nóg een ruimte met méér verborgen schatten! Deze keer tampons, maandverband en wc-papier (meenemen!).</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop34.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop34.jpg" alt="missing" width="800">
     <figcaption>Hier heb ik de achterkant van het toilethokje gesloopt.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop35.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop35.jpg" alt="missing" width="800">
     <figcaption>De reclamesticker op de deur heb ik voorzichtig verwijderd. Ik vind hem leuk, dus die bewaar ik. Ik weet nog niet wat ik er mee doe.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop36.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop36.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop37.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop37.jpg" alt="missing" width="800">
     <figcaption>Het toilet gesloopt, dat was een boel werk.. De pot er ook afgehaald. Gelukkig kwam er geen stank uit de vuilwatertank.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop38.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop38.jpg" alt="missing" width="800">
     <figcaption>Tenslotte de vloer van het toilet gesloopt.</figcaption>
   </figure>
 
   <p>Na het slopen van het toilet besefte ik ook dat mijn oorspronkelijke plan voor de badkamer niet mogelijk is. Ik wou namelijk een badkamer creëren met de douchecabine, wastafel én het toilet in één ruimte. Hiervoor zou ik de originele toiletruimte moeten verbreden, maar daarbij kom je de ruggengraat van het chassis van de bus tegen. En daar kun (en mag!) je niet de flex in zetten..</p>
-  <h3 id="asbest" class="sub-heading">ASBEST?</h3>
+  <h3 id="asbest">ASBEST?</h3>
   <span class="date">23 januari 2024</span> 
   <p>Achterin de bus, waar de achterbank ooit zat, zat een stalen plaat. Ik besloot deze plaat te verwijderen omdat ik het idee had dat achter de plaat loze (en dus benutbare!) ruimte zat. Dat was ook het geval. Ik zette dus de flex erin, maar terwijl ik aan het slijpen was merkte ik dat er een soort witte stof in de lucht vrij kwam. Dat was niet het staal...</p>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop39.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop39.jpg" alt="missing" width="800">
     <figcaption>Achter de stalen plaat zat een soort vezelige plaat die je in stukken eraf kon breken.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop40.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop40.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop41.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop41.jpg" alt="missing" width="800">
   </figure>
 
   <p>Het kwartje viel vrij laat voor mij, maar opeens dacht ik: vezelachtige plaat? Wit? Kuuut, is dit geen asbest? Een second opinion van paps resulteerde in hetzelfde oordeel: asbest. Ik droeg voor het grootste gedeelte wel mijn mondmasker, maar de filters die erop zitten zijn niet helemaal geschikt voor dit soort stoffen, kwam ik achter... Fijn.</p>
   <p>Doordat ik een video keek over twee mensen die een stalen schip restaureren (voor de liefhebbers:<a href="https://www.youtube.com/@FlyingConey">FlyingConey</a>) wist ik van het bestaan van asbest-testkits. Ik besloot ook zo'n set te bestellen en het vreemde materiaal te testen.</p>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop42.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop42.jpg" alt="missing" width="800">
     <figcaption>Je krijgt een uitgebreid pakket waarmee je een stuk materiaal kunt opsturen naar het lab voor analyse. Op de foto heb ik al een stukje "asbest" in het zakje gedaan. Deze heb ik in de brievenbus gedaan en dan is het een kwestie van wachten...</figcaption>
   </figure>
 
   <p>De uitslag van de test kreeg ik een aantal dagen later op de mail (zie foto). "Geen asbest" was de conclusie. Toch voelde ik me nog niet helemaal gerustgesteld. Ik geloofde het eigenlijk niet. Het materiaal lijkt namelijk sprekend op asbest. Ik heb het bedrijf van de test gebeld met de vraag of de uitslag wel klopt. De man aan de telefoon zei: "ja ik ben ook verbaasd want ik dacht ook dat het asbest is". Lekker geruststellend... Hij zou het nog eens navragen. Het antwoord bleef hetzelfde, geen asbest. Nouja dan moeten we daar maar vanuit gaan dan. Waarschijnlijk is het gips. Weer door!</p>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop43.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop43.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop44.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop44.jpg" alt="missing" width="800">
     <figcaption>Hier ben ik al een heel eind met het verwijderen van de stalen plaat. Zoals je kunt zien zit er achter de plaat een holle ruimte. De nieuwe wand kan gewoon recht/verticaal worden gemaakt, zodat de ruimte in de bus groter wordt.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop45.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop45.jpg" alt="missing" width="800">
     <figcaption>De plaat is er helemaal uit. In de hoeken van de bus zit roest. Dit komt omdat de toplichtrubbers (op alle vier bovenhoeken vd bus, zie pijlen op onderstaande foto) lek zijn. Zo kan er water naar binnen lopen. hierover later meer.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop46.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop46.jpg" alt="missing" width="800">
     <figcaption>De locaties van de toplichten. De leuke groene oldtimer is een NSU van oud-collega Roy, die af en toe even komt koekeloeren.</figcaption>
   </figure>
 
-  <h3 id="onder_in_de_bus" class="sub-heading">Onder in de bus</h3>
+  <h3 id="onder_in_de_bus">Onder in de bus</h3>
   <span class="date">9 januari 2024</span> 
   <p>Ook onder in de bus (of begane grond?) ben ik druk geweest met slopen.. Ook hier was het doel weer: helemaal strippen. Dit was ontzettend veel en zwaar werk. Veel onderdelen waren geschroefd én vastgekit, waardoor het verwijderen erg lastig was. Maar het is gelukt!</p>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop47.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop47.jpg" alt="missing" width="800">
     <figcaption>De luiken worden ondersteund door gasveren (zoals de kofferbakklep van een auto), maar sommige zijn niet zo best meer of ontbreken. Hierdoor blijven de luiken minimaal of helemaal niet openstaan. Vandaar de houten balk eronder. Uiteindelijk vervang ik de gasveren</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop48.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop48.jpg" alt="missing" width="800">
     <figcaption>De onderste ruimte bestond uit 4 ruimtes van verschillende groottes, gescheiden door houten wanden. Ik heb alles eruit gesloopt.</figcaption>
   </figure>
 
@@ -574,72 +526,72 @@
   <p>Het rechtervak was onderverdeeld in twee kleinere vakken. Het kleine vakje links was voor bergruimte. Het grotere vak bood een slaapplaats voor de 2e bestuurder! Zie ook het raampje in het luik. Tegenover het toilet zat een deurtje die toegang gaf tot de ruimte. De persoon in de slaapruimte kon de deur op slot doen, een lampje aan- en uit doen en beschikte over een Philips bedrade telefoon (voor contact met de bestuurder?).</p>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop49.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop49.jpg" alt="missing" width="800">
     <figcaption>Hier een foto vd sloopwerkzaamheden in het linkervak. Achterin zit nog een groot deel van de gasbun op zijn plaats. Het wordt snel donker in december...</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop50.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop50.jpg" alt="missing" width="800">
     <figcaption>Een andere foto van het rechtervak zoals het was. Helemaal rechts staat de luidspreker die door de vorige eigenaar achter is gelaten. Na een kleine reparatie werkt deze weer en nu gebruik ik hem als klusluidspreker!</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop51.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop51.jpg" alt="missing" width="800">
     <figcaption>De luidsprekers in de behuizing waren allemaal in orde. Het plastic van de tweeter was alleen gebroken zodat hij los hing. Deze heb ik gelijmd en klaarie.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/sloop/sloop52.jpg" alt="missing" width="800">
+    <img src="Media/sloop/sloop52.jpg" alt="missing" width="800">
     <figcaption>Nadat onder in de bus ruimte was gecreëerd door het slopen, kunnen daar mooi wat spullen staan. De stoelen bijvoorbeeld.</figcaption>
   </figure>
   
   <p>Zo rond dit punt begon ik me wat meer te richten op herstel- en bouwwerkzaamheden. Met andere woorden, het einde van het slopen kwam eindelijk in zicht en het bouwen kon langzaam beginnen! Gaande weg moet er nog wel e.e.a. gesloopt worden, maar het meeste zit er nu op!</p>
 
   <!-- 6 - Bezoek aan Stichting Veteraan Autobussen -->
-  <h2 id="bezoek_aan_stichting_veteraan_autobussen" class="heading">6 - Bezoek aan Stichting Veteraan Autobussen</h2>
+  <h2 id="bezoek_aan_stichting_veteraan_autobussen">6 - Bezoek aan Stichting Veteraan Autobussen</h2>
   <span class="date">3 december 2024</span> 
   <p>Oké, dit was écht leuk! Doordat ik zat te neuzen op internet om informatie te vinden over mijn bus stuitte ik op de website van Stichting Veteraan Autobussen. De Stichting Veteraan Autobussen is een stichting die historische Nederlandse autobussen onderhoudt en inzet voor evenementen. De stichting heeft een aantal vestigingen verspreid over het land. Toevallig heeft de stichting net zo'n bus als ik in beheer, deze is alleen 5 jaar jonger:</p>
 
   <figure>
-    <img loading="lazy" src="Media/veteranenbus/vetbus1.jpg" alt="missing" width="800">
+    <img src="Media/veteranenbus/vetbus1.jpg" alt="missing" width="800">
   </figure>
 
   <p>Ik dacht: een bezoek aan deze stichting en deze bus kan me veel waardevolle informatie opleveren. Ik heb contact gezocht met de stichting, welke in Apeldoorn bleek te zitten (mooi dichtbij!). Tot mijn vreugde werd ik van harte uitgenodigd om eens te komen kijken. Hieronder wat foto's die ik die dag gemaakt heb.</p>
 
   <figure>
-    <img loading="lazy" src="Media/veteranenbus/vetbus2.jpg" alt="missing" width="800">
+    <img src="Media/veteranenbus/vetbus2.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/veteranenbus/vetbus3.jpg" alt="missing" width="800">
+    <img src="Media/veteranenbus/vetbus3.jpg" alt="missing" width="800">
     <figcaption>Hun exemplaar ziet er voor haar leeftijd nog prachtig uit. Maar deze bussen worden dan ook liefdevol onderhouden.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/veteranenbus/vetbus4.jpg" alt="missing" width="800">
+    <img src="Media/veteranenbus/vetbus4.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/veteranenbus/vetbusacron.jpg" alt="missing" width="800">
+    <img src="Media/veteranenbus/vetbusacron.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/veteranenbus/vetbus5.jpg" alt="missing" width="800">
+    <img src="Media/veteranenbus/vetbus5.jpg" alt="missing" width="800">
     <figcaption>De cockpit.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/veteranenbus/vetbus6.jpg" alt="missing" width="800">
+    <img src="Media/veteranenbus/vetbus6.jpg" alt="missing" width="800">
     <figcaption>Het interieur! Kijk hoe het er vroeger uit heeft gezien! Wat een verschil. Nette bus hoor voor die tijd.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/veteranenbus/vetbus7.jpg" alt="missing" width="800">
+    <img src="Media/veteranenbus/vetbus7.jpg" alt="missing" width="800">
     <figcaption>Een paar foto's gemaakt van het technische gebeuren. Handig om te weten voor het herstellen van de techniek in mijn bus. Hier de knopjes bij het stuur voor het bedienen van alle deuren, lampjes, ventilatoren enzovoorts.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/veteranenbus/vetbus8.jpg" alt="missing" width="800">
+    <img src="Media/veteranenbus/vetbus8.jpg" alt="missing" width="800">
     <figcaption>Ook van de motorruimte valt veel te leren over hoe dingen horen te zitten.</figcaption>
   </figure>
 
@@ -652,85 +604,85 @@
   <p>Bonus foto's van een van de nog oudere bussen (Leyland meen ik):</p>
 
   <figure>
-    <img loading="lazy" src="Media/veteranenbus/vetbus10.jpg" alt="missing" width="800">
+    <img src="Media/veteranenbus/vetbus10.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/veteranenbus/vetbus11.jpg" alt="missing" width="800">
+    <img src="Media/veteranenbus/vetbus11.jpg" alt="missing" width="800">
   </figure>
 
   <!-- 7 - Nieuwe busindeling -->
-  <h2 id="nieuwe_busindeling" class="heading">7 - Nieuwe busindeling</h2>
+  <h2 id="nieuwe_busindeling">7 - Nieuwe busindeling</h2>
   <span class="date">1 januari 2024</span> 
   <p>Over de indeling van de bus heb ik een tijdje nagedacht. Ik denk dat ik het als volgt ga doen. De slaapkamer achterin. De keuken komt er tegen aan met een scheidingswand. De scheidingswand wil ik opzij kunnen schuiven (schuifdeur). Even kijken of dat gaat lukken, anders wordt het een "normale" openslaande deur. De eethoek tegenover de keuken, met de originele bus stoelen. Het toilet komt ongeveer tegenover de trap bij de zij uitgang, waar het toilet zat. Waar het toilet zat maak ik dan de douche cabine. Ik wou een volwaardige badkamer maken met de douche en het toilet in één ruimte, maar dat past niet. Ergens halverwege wil ik een houtkachel plaatsen. Voorin de bus komt dan de zithoek met (hoek-)bank, televisie enzovoorts. De cockpit en de rest van de bus scheid ik ook met een scheidingswand. Dit omdat de cockpit moeilijk te isoleren is en ik zo een "rechte bak" heb om te isoleren. Dat maakt een en ander makkelijker. Zie foto.</p>
 
   <figure>
-    <img loading="lazy" src="Media/indelingschets.jpg" alt="missing" width="800">
+    <img src="Media/indelingschets.jpg" alt="missing" width="800">
   </figure>
 
   <!-- 8 - Elektra -->
-  <h2 id="elektra" class="heading">8 - Elektra</h2>
+  <h2 id="elektra">8 - Elektra</h2>
   <span class="date">16 februari 2024</span> 
   <p>Als onderdeel van het slopen heb ik ook gekeken naar de elektra van de bus. En geloof me, er zit een boel elektra in zo'n bus... Eerste stap was om al het spul wat duidelijk overbodig is eruit te slopen. Dit valt niet mee, gezien de vorige eigenaren er ook aan gerommeld hebben.</p>
 
   <figure>
-    <img loading="lazy" src="Media/elektra/elektra1.jpg" alt="missing" width="800">
+    <img src="Media/elektra/elektra1.jpg" alt="missing" width="800">
     <figcaption>Een voorbeeld van het oerwoud aan kabels toen ik ermee van start ging. Of zoals pap en ik het noemen: kabelarij.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/elektra/elektra2.jpg" alt="missing" width="800">
+    <img src="Media/elektra/elektra2.jpg" alt="missing" width="800">
     <figcaption>Nadat ik allerlei oude troep verwijderd had lijkt het al overzichtelijker. Dit is dezelfde ruimte als die op vorige foto. Hier heb ik mantel van de hoofdkabelboom losgesneden om de verschillende kleuren te kunnen herleiden.</figcaption>
   </figure>
     
   <figure>
-    <img loading="lazy" src="Media/elektra/elektra3.jpg" alt="missing" width="800">
+    <img src="Media/elektra/elektra3.jpg" alt="missing" width="800">
     <figcaption>De zekeringkast... wel origineel gelukkig!</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/elektra/elektra4.jpg" alt="missing" width="800">
+    <img src="Media/elektra/elektra4.jpg" alt="missing" width="800">
     <figcaption>De accu's (2x 12V).</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/elektra/elektra5.jpg" alt="missing" width="800">
+    <img src="Media/elektra/elektra5.jpg" alt="missing" width="800">
     <figcaption>De accu"lade" heb ik meteen even een lik verf gegeven! Hier in de menie.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/elektra/elektra6.jpg" alt="missing" width="800">
+    <img src="Media/elektra/elektra6.jpg" alt="missing" width="800">
     <figcaption>Hier in zwarte hamerslag.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/elektra/elektra7.jpg" alt="missing" width="800">
+    <img src="Media/elektra/elektra7.jpg" alt="missing" width="800">
     <figcaption>Sommige kabels waren lastiger door te knippen dan anderen...</figcaption>
   </figure>
   
   <p>Op het dashboard zitten een boel knopjes en controlelampjes voor de originele aansturing. Denk hierbij aan het pompje van het toilet en de kraan, de verlichting, de verwarming maar ook de ruitenwissers, enzovoorts. Veel van het oude systeem is niet meer nodig. De bus heeft natuurlijk een heel ander doel gekregen.</p>
 
   <figure>
-    <img loading="lazy" src="Media/elektra/elektra8.jpg" alt="missing" width="800">
+    <img src="Media/elektra/elektra8.jpg" alt="missing" width="800">
     <figcaption>Dashboard met alle knopjes.</figcaption>
   </figure>
   
   <p>Maar welk kabeltje of knopje doet wat?</p>
   
   <figure>
-    <img loading="lazy" src="Media/elektra/elektra9.jpg" alt="missing" width="800">
+    <img src="Media/elektra/elektra9.jpg" alt="missing" width="800">
     <figcaption>De werking van alle knopjes proberen te achterhalen en dit meteen noteren.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/elektra/elektra10.jpg" alt="missing" width="800">
+    <img src="Media/elektra/elektra10.jpg" alt="missing" width="800">
     <figcaption>Later heb ik het stuurwiel eraf getrokken om beter bij de kabels te kunnen.</figcaption>
   </figure>
   
   <p>We zijn er nog niet.. ondanks dat ik al heel veel kabels heb verwijderd, blijft er nog een heel aantal over:</p>
 
   <figure>
-    <img loading="lazy" src="Media/elektra/elektra11.jpg" alt="missing" width="800">
+    <img src="Media/elektra/elektra11.jpg" alt="missing" width="800">
     <figcaption>Achterkant dashboard.</figcaption>
   </figure>
 
@@ -739,13 +691,13 @@
   
 
   <!--9 - Webasto standkachel reviseren-->
-  <h2 id="webasto_standkachel_reviseren" class="heading">9 - Webasto standkachel reviseren</h2>
+  <h2 id="webasto_standkachel_reviseren">9 - Webasto standkachel reviseren</h2>
   <span class="date">18 maart 2024</span>
-  <h3 id="wat_is_een_standkachel" class="sub-heading">Wat is een standkachel?</h3>
+  <h3 id="wat_is_een_standkachel">Wat is een standkachel?</h3>
   <p>Een standkachel is een kachel die diesel verbrandt om water op te warmen voor de verwarming van een ruimte. In combinatie met een boilervat (zie tweede foto) kan er ook warm douchewater bereid worden. Je kunt het vergelijken met een CV-ketel in een woning.</p>
 
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto1.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto1.jpg" alt="missing" width="800">
   </figure>
 
   <p>In mijn bus trof ik een Webasto standkachel aan. Webasto is een Duitse kachelfabrikant. Hun kachels staan bekend als (een van de) betrouwbaarste kachels op de markt. Ze zitten geniaal in elkaar. Simpel maar effectief.</p>
@@ -753,167 +705,167 @@
   <p>Zoals ik eerder had vermeld had ik ontdekt dat er een boilervat in de bus is geplaatst (zie foto). Hiermee kan icm met de standkachel warm water worden opgeslagen voor douchen/warm water. Naast de aansluiting voor de standkachel, zit er ook een elektrisch verwarmingselement in, zodat het water eventueel óók elektrisch (met stroom van de zonnepanelen óf "wal"stroom) verwarmd kan worden. Een zeer nuttige vondst!</p>
 
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto2.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto2.jpg" alt="missing" width="800">
     <figcaption>Het boilervat onder de vloer.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto3.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto3.jpg" alt="missing" width="800">
     <figcaption>De standkachel van de bus, door pap voorzien van een nieuwe grijze verflaag.</figcaption>
   </figure>
 
   <!-- De revisie -->
-  <h3 id="de_revisie" class="sub-heading">De revisie</h3>
+  <h3 id="de_revisie">De revisie</h3>
   <p>Maar zo mooi gerestaureerd was hij nog niet toen ik hem aantrof. Zo zagen de kachel en de kachelruimte eruit in het begin:</p>
 
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto4.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto4.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
     <p>Dit model standkachel is al wat ouder en ik had in het begin geen idee of hij het nog zal doen. Mijn gevoel zei dat hij weer zou werken, dus ben ik aan de slag gegaan.</p>
-    <img loading="lazy" src="Media/webasto/webasto9.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto9.jpg" alt="missing" width="800">
     <figcaption>De branderkop, die pap heeft schoongemaakt en heeft voorzien van een nieuwe spuitmond (voor het vernevelen van de diesel).</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto10.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto10.jpg" alt="missing" width="800">
     <figcaption>De elektromotor voor de dieselpomp en de interne ventilator (voor het aanvoeren van zuurstof voor de verbranding en het uitblazen van de rookgassen).</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto11.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto11.jpg" alt="missing" width="800">
     <figcaption>Nieuwe SKF lagertjes voor de pompmotor.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto11.1.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto11.1.jpg" alt="missing" width="800">
     <figcaption>De oude lagertjes.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto11.2.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto11.2.jpg" alt="missing" width="800">
     <figcaption>Het asje.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto12.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto12.jpg" alt="missing" width="800">
     <figcaption>Voordat ik de lagers kon vervangen moest wel eerst de hele motor uit elkaar...</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto13.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto13.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto14.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto14.jpg" alt="missing" width="800">
     <figcaption>Branderkop klaar, met nieuwe kabels. Ook de elektrodenafstand heb ik afgesteld (voor het ontsteken van de diesel na inspuiting).</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto15.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto15.jpg" alt="missing" width="800">
     <figcaption>De uitlaat is gerepareerd (o.a. gelast) en in zilvergrijs gespoten:</figcaption>
   </figure>
   
   <!--Reparatie van de vloer-->
   <figure>
-    <h3 id="reparatie_van_de_vloer" class="sub-heading">Reparatie van de vloer</h3>
+    <h3 id="reparatie_van_de_vloer">Reparatie van de vloer</h3>
     <span class="date">24 maart 2024</span> 
     <p>Omdat water door een aantal gaten naar binnen kon komen was het eerst zaak om dit te herstellen:</p>
 
-    <img loading="lazy" src="Media/webasto/webasto5.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto5.jpg" alt="missing" width="800">
     <figcaption>Eén van de gaten. Waar zou dit voor hebben gediend vraag ik me af?</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/webasto/webastogat.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webastogat.jpg" alt="missing" width="800">
     <figcaption>Een ander gat. Zie óók het slechte plaatwerk naast de koker.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto6.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto6.jpg" alt="missing" width="800">
     <figcaption>Een groot rond gat -voor een uitlaat geweest?- en een aantal kleinere gaten dichtgelast.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/webasto/webastolasunp.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webastolasunp.jpg" alt="missing" width="800">
     <figcaption>De UNP waar de Webasto op gemonteerd wordt ingeslepen, dichtgevouwen en dicht gelast.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto7.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto7.jpg" alt="missing" width="800">
     <figcaption>De vloer helemaal dichtgelast (muv het gat voor de uitlaat van de kachel) en klaar voor een likje verf.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto8.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto8.jpg" alt="missing" width="800">
     <figcaption>De vloer in de verf! Dat knapt op!</figcaption>
   </figure>
   
   <!-- Monteren en aansluiten van de kachel -->
   <figure>
-    <h3 id="monteren_en_aansluiten_van_de_kachel" class="sub-heading">Monteren en aansluiten van de kachel</h3>
+    <h3 id="monteren_en_aansluiten_van_de_kachel">Monteren en aansluiten van de kachel</h3>
     <span class="date">7 april 2024</span> 
-    <img loading="lazy" src="Media/webasto/webastopassen.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webastopassen.jpg" alt="missing" width="800">
     <figcaption>Hier heb ik de kachel tijdelijk gemonteerd om te kijken of alles past. Vloer hier nog niet geverfd.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webastooudekabels.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webastooudekabels.jpg" alt="missing" width="800">
     <figcaption>Hier heb ik de kachel definitief gemonteerd. De kabels moeten hier nog vernieuwd worden. Ze waren gecorrodeerd en maakten niet of nauwelijks meer contact.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto17.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto17.jpg" alt="missing" width="800">
     <figcaption>Hier de kachel volledig aangesloten en voorzien van nieuwe kabels en stekkers.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto29.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto29.jpg" alt="missing" width="800">
     <figcaption>De waterpomp weer gemonteerd op een afstandsblokje gemaakt met de 3d printer.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto18.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto18.jpg" alt="missing" width="800">
     <figcaption>Van dichterbij. Zie ook het Webasto dekseltje, daar heb ik even een nieuwe voor geprint met de 3d printer. De oude was beschadigd. Ik kon het niet laten om het "Webasto" logo erin op te nemen :). De pvc bochten vervang ik later door aluminium bochten.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto27.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto27.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto19.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto19.jpg" alt="missing" width="800">
     <figcaption>Het beugeltje voor de elektronische stuurunit van de kachel brak helaas af.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto20.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto20.jpg" alt="missing" width="800">
     <figcaption>Gelukkig is mijn oom een uitstekende lasser en had hij geen moeite met het dunne materiaal!</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto21.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto21.jpg" alt="missing" width="800">
     <figcaption>Hier de stuurunit op zijn plaats.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto22.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto22.jpg" alt="missing" width="800">
     <figcaption>Aan de aanvoerleiding heb ik een manometer (om de druk af te lezen) en een vulpunt toegevoegd.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto28.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto28.jpg" alt="missing" width="800">
     <figcaption>De retour-dieselslang heb ik vervangen voor een nieuwe, omdat de oude lekte.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto23.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto23.jpg" alt="missing" width="800">
     <figcaption>Het voegt niet veel toe maar ik kon het niet laten om even de handwieltjes van de afsluiters in kleur te spuiten. Rood=warm Blauw=koud.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/webasto/webasto25.jpg" alt="missing" width="800">
+    <img src="Media/webasto/webasto25.jpg" alt="missing" width="800">
     <figcaption>Hier miste überhaupt een handwiel, maar pap had nog een mooie met dezelfde asmaat. Bedankt pap!</figcaption>
   </figure>
   
@@ -925,167 +877,167 @@
   <!-- Kiekje -->
   <h2>Kiekje</h2>
   <figure>
-    <img loading="lazy" src="Media/kiekjes/gekkeschrdr.jpg" alt="missing" width="800">
+    <img src="Media/kiekjes/gekkeschrdr.jpg" alt="missing" width="800">
     <figcaption>Wat een gekke schroevendraaier?</figcaption>
   </figure>
   
   <!-- 10 - De vloer -->
-  <h2 id="de_vloer" class="heading">10 - De vloer</h2>
+  <h2 id="de_vloer">10 - De vloer</h2>
   <span class="date">12 juni 2024</span> 
   <p>Met het bouwen van de vloer heb ik ook een begin gemaakt. Voordat de nieuwe vloerplaten gemonteerd kunnen worden moet eerst de isolatie aangebracht worden dat er onder komt. Hiervoor moest ik eerst wat roest plekjes op het frame behandelen en de frames waar de ondervloerkachels in zaten weghalen.</p>
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso1.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso1.jpg" alt="missing" width="800">
     <figcaption>Vóór het weghalen van het frame van de ondervloerkachel.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso2.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso2.jpg" alt="missing" width="800">
     <figcaption>Het frame er tussen uit. Je kunt de leidingen voor de warm wateraansluiting nog zien zitten. Deze heb ik er later ook uit gehaald. Later breng ik ze opnieuw aan.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso3.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso3.jpg" alt="missing" width="800">
     <figcaption>Hier mijn eerste poging tot het maken van een frame waarin de isolatie komt te zitten. Mijn eerste plan was om alles te monteren met montagekit.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso4.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso4.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso5.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso5.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso6.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso6.jpg" alt="missing" width="800">
     <figcaption>Ik kwam er snel achter dat het frame lager moet, want de isolatie steekt te ver uit. Je kunt de isolatie gemakkelijk indrukken, maar isolatie isoleert juist door de lucht tussen de vezels.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso7.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso7.jpg" alt="missing" width="800">
     <figcaption>Nog een extra latje tegen het doorhangen van de isolatie.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso8.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso8.jpg" alt="missing" width="800">
     <figcaption>Hier zit het eerste stukje er in. Dit is veel meer werk dan ik dacht...</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso9.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso9.jpg" alt="missing" width="800">
     <figcaption>Hier ben ik al een stukje verder.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso10.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso10.jpg" alt="missing" width="800">
     <figcaption>De slechte plekken van het staal heb ik behandeld met menie.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso11.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso11.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/gaas1.jpg" alt="missing" width="800">
+    <img src="Media/vloer/gaas1.jpg" alt="missing" width="800">
     <figcaption>De ondersteuning die ik eerst had gemaakt tegen het doorzakken van de isolatie bleek niet voldoende, dus ik heb ik later kippengaas toegevoegd.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso11.1.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso11.1.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso23.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso23.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso13.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso13.jpg" alt="missing" width="800">
     <figcaption>Hier heb ik één deel klaar. Als je goed kijkt zie je ook dat ik inmiddels schroeven heb gebruikt. de montagekit hechtte niet goed op het staal omdat ik het niet goed schoon kon maken. Soms vind je gaandeweg een betere en snellere manier om iets te maken...</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso13.1.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso13.1.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso13.2.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso13.2.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso14.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso14.jpg" alt="missing" width="800">
     <figcaption>Mooi verzonken :) Zo kan de vloerplaat straks mooi vlak liggen.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso15.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso15.jpg" alt="missing" width="800">
     <figcaption>Nu de andere kant. Hier ben ik bezig met de roest op het frame te verwijderen en een paar lassen vlak te slijpen zodat ook dit in de menie kan.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso16.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso16.jpg" alt="missing" width="800">
     <figcaption>Méér slijpen en schuren.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso17.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso17.jpg" alt="missing" width="800">
     <figcaption>Méér menie.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso17.1.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso17.1.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso18.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso18.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso19.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso19.jpg" alt="missing" width="800">
     <figcaption>Ook hier een framepje in maken voor de isolatie. Je kijkt hier op de achterste wielkast, waar de achterwielen zitten (DUBBEL-LUCHT JONGEEE).</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/gaas2.jpg" alt="missing" width="800">
+    <img src="Media/vloer/gaas2.jpg" alt="missing" width="800">
     <figcaption>Gaas plaatsen.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso20.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso20.jpg" alt="missing" width="800">
     <figcaption>Glaswol plaatsen.</figcaption>
   </figure>
   
   <p>Voordat ik de isolatie bij de hoek bij de deur kon plaatsen moest ik eerst een van de kokers repareren omdat ik er tijdens de sloop per ongeluk met mijn cirkelzaag dwars doorheen heb gezaagd lol. Zie bovenstaande foto.</p>
 
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso26.jpeg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso26.jpeg" alt="missing" width="800">
     <figcaption>De snede in de koker weer dichtgelast.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso27.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso27.jpg" alt="missing" width="800">
   </figure>
   
     <figure>
-      <img loading="lazy" src="Media/vloer/vloeriso28.jpg" alt="missing" width="800">
+      <img src="Media/vloer/vloeriso28.jpg" alt="missing" width="800">
       <figcaption>En daarna in de menie.</figcaption>
     </figure>
     
       <figure>
-        <img loading="lazy" src="Media/vloer/vloeriso29.jpg" alt="missing" width="800">
+        <img src="Media/vloer/vloeriso29.jpg" alt="missing" width="800">
         <figcaption>Toegang voor het verven via het luik buiten. Het scharnier van het luik is niet meer, dus dat moet gerepareerd worden.</figcaption>
       </figure>
       
         <figure>
-          <img loading="lazy" src="Media/vloer/vloeriso30.jpg" alt="missing" width="800">
+          <img src="Media/vloer/vloeriso30.jpg" alt="missing" width="800">
         </figure>
 
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso24.jpg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso24.jpg" alt="missing" width="800">
     <figcaption>De hoek bij de deur is daarmee klaar. Hier heb ik dunnere steenwol platen gebruikt omdat onder dit deel van de vloer de doorgang naar het ruim is.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/vloer/vloeriso25.jpeg" alt="missing" width="800">
+    <img src="Media/vloer/vloeriso25.jpeg" alt="missing" width="800">
   </figure>
   
   <br>
@@ -1093,19 +1045,19 @@
   <p>Het is donker en fris in de winter, maar het werk gaat door :)</p>
   
   <figure>
-    <img loading="lazy" src="Media/kiekjes/opritzon.jpeg" alt="missing" width="800">
+    <img src="Media/kiekjes/opritzon.jpeg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/kiekjes/bevrbus.jpg" alt="missing" width="800">
+    <img src="Media/kiekjes/bevrbus.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/kiekjes/werklichtbus.jpg" alt="missing" width="800">
+    <img src="Media/kiekjes/werklichtbus.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/kiekjes/accueruit.jpg" alt="missing" width="800">
+    <img src="Media/kiekjes/accueruit.jpg" alt="missing" width="800">
     <figcaption>De accu's heb ik vóór de kou uit de bus gehaald om binnen warm te staan aan de druppellader. Bijna 30 kilo per stuk...</figcaption>
   </figure>
   
@@ -1115,534 +1067,534 @@
   <p>Verder met de vloer van de keuken. Ik wist eerst niet zo goed hoe ik het middelste gedeelte van de vloer zou isoleren:<p>
     
     <figure>
-      <img loading="lazy" src="Media/vloer/vloeriso22.jpg" alt="missing" width="800">
+      <img src="Media/vloer/vloeriso22.jpg" alt="missing" width="800">
       <figcaption>Middelste gedeelte van de vloer waar het koelwater, elektra en de bediening van de motor en versnellingsbak onderdoor loopt.</figcaption>
     </figure>
     
     <p></p>  Een zacht isolatiemateriaal als glaswol is hier niet geschikt, omdat het maken van een frame met gaas zoals eerder niet past. Daarnaast wil ik later bij het leidingwerk etc. onder de vloer kunnen komen mocht er een reparatie nodig zijn. Hiervoor maak ik later een luik in de vloer. Daarom monteer ik tussen de kokers in het midden aluminium hoekprofielen, waar dan PIR isolatieplaat op kan liggen. PIR plaat is beter geschikt, omdat het een harde plaat is die je er weer uit kan pakken.</p>
     
     <figure>
-      <img loading="lazy" src="Media/vloer/isogekocht.jpg" alt="missing" width="800">
+      <img src="Media/vloer/isogekocht.jpg" alt="missing" width="800">
       <figcaption>Isolatie gehaald voor de vloer.</figcaption>
     </figure>
     
     <figure>
-      <img loading="lazy" src="Media/vloer/vloeriso31.jpg" alt="missing" width="800">
+      <img src="Media/vloer/vloeriso31.jpg" alt="missing" width="800">
       <figcaption>De aluminum hoekprofielen op maat zagen en monteren.</figcaption>
     </figure>
     
     <figure>
-      <img loading="lazy" src="Media/vloer/vloeriso31.1.jpg" alt="missing" width="800">
+      <img src="Media/vloer/vloeriso31.1.jpg" alt="missing" width="800">
       <figcaption>Voor deze klus heb ik een haakse bithouder gekocht, ideaal.</figcaption>
     </figure>
     
     <figure>
-      <img loading="lazy" src="Media/vloer/vloeriso32.jpg" alt="missing" width="800">
+      <img src="Media/vloer/vloeriso32.jpg" alt="missing" width="800">
       <figcaption>PIR platen op maat snijden. Een tijdrovend karwei.</figcaption>
     </figure>
     
     <figure>
-      <img loading="lazy" src="Media/vloer/vloeriso33.jpg" alt="missing" width="800">
+      <img src="Media/vloer/vloeriso33.jpg" alt="missing" width="800">
     </figure>
     
     <figure>
-      <img loading="lazy" src="Media/vloer/vloeriso35.jpg" alt="missing" width="800">
+      <img src="Media/vloer/vloeriso35.jpg" alt="missing" width="800">
       <figcaption>Maar het werkt wel goed! Best strak toch?</figcaption>
     </figure>
     
     <figure>
-      <img loading="lazy" src="Media/vloer/vloeriso37.jpg" alt="missing" width="800">
+      <img src="Media/vloer/vloeriso37.jpg" alt="missing" width="800">
       <figcaption>Om koudebruggen (ongeisoleerde verbindingen tussen het warme binnenklimaat en de buitenlucht) te voorkomen heb ik op de kokers schuimrubber strips aangebracht.</figcaption>
     </figure>
     
     <figure>
-      <img loading="lazy" src="Media/vloer/vloeriso36.jpg" alt="missing" width="800">
+      <img src="Media/vloer/vloeriso36.jpg" alt="missing" width="800">
       <figcaption>Ondertussen heb ik wat vloerplaten gehaald en op maat gezaagd met pap. Het eerste deel van de vloer klaar!</figcaption>
     </figure>
 
   <!-- 11 - Vrachtwagenrijbewijs gehaald! -->
-  <h2 id="vrachtwagenrijbewijs_gehaald" class="heading">11 - Vrachtwagenrijbewijs gehaald!</h2>
+  <h2 id="vrachtwagenrijbewijs_gehaald">11 - Vrachtwagenrijbewijs gehaald!</h2>
   <span class="date">2 juli 2024</span> 
   <p>Op 2 juli ben ik geslaagd voor mijn C-rijbewijs! :)</p>
 
   <figure>
-    <img loading="lazy" src="Media/rijbewijs.jpg" alt="missing" width="800">
+    <img src="Media/rijbewijs.jpg" alt="missing" width="800">
   </figure>
 
   <p>Tekst en uitleg: bij een voertuig (bus) met maximaal 8 zitplaatsen mag deze bestuurd worden met zowel een bus-rijbewijs als een vrachtwagenrijbewijs. Mijn bus telt met 6 passagierstoelen en een bestuurder- en bijrijderstoel 8 stoelen. Dat betekent dat ik met een C-rijbewijs de bus mag besturen. Daarnaast heb ik meer aan een C-rijbewijs dan een bus-rijbewijs omdat ik nu ook vrachtwagens mag besturen.</p>
  
   <!-- 12 - Zonneluifel demonteren -->
-  <h2 id="zonneluifel_demonteren" class="heading">12 - Zonneluifel demonteren</h2>
+  <h2 id="zonneluifel_demonteren">12 - Zonneluifel demonteren</h2>
   <span class="date">14 juli 2024</span> 
 
   <p>Op het dak van de bus hebben de vorige eigenaren een lange zonneluifel gemonteerd (zie foto). Later wil ik nog wel iets van een luifel en/of "voortent", maar deze is voor mij veel te groot en te lomp. Dus deze luifel er maar af. Ik had me alleen goed verkeken op het gewicht van de luifel! Ik denk dat hij minstens 100 kg weegt, als het niet meer is.</p>  
 
   <figure>
-    <img loading="lazy" src="Media/zonneluifel/zonneluifel1.jpg" alt="missing" width="800">
+    <img src="Media/zonneluifel/zonneluifel1.jpg" alt="missing" width="800">
     <figcaption>Ik geef toe, op zich wel een top idee.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/zonneluifel/zonneluifel2.jpg" alt="missing" width="800">
+    <img src="Media/zonneluifel/zonneluifel2.jpg" alt="missing" width="800">
     <figcaption>De luifel was gemonteerd op twee héééle dikke hard houten balken. Deze wegen per stuk ook zo'n 60 kg gok ik zo. De balken waren weer bevestigd met hoekprofielen en met bouten dwars door het dak. De boutgaten hadden ze afgeplakt met een soort bitumentape (zie het zwarte spul). Wel waterdicht, maar het plakt ontzettend! En aan alles vast! Het verwijderen nam dan ook enige tijd in beslag.</figcaption>
   </figure>
   
     <figure>
-      <img loading="lazy" src="Media/zonneluifel/luifel2.3.jpg" alt="missing" width="800">
+      <img src="Media/zonneluifel/luifel2.3.jpg" alt="missing" width="800">
     </figure>
 
   <figure>
-    <img loading="lazy" src="Media/zonneluifel/luifel2.2.jpg" alt="missing" width="800">
+    <img src="Media/zonneluifel/luifel2.2.jpg" alt="missing" width="800">
     <figcaption>De balken werden geschoord door lompe hoekprofielen, die ook door het dak waren geschroefd</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/zonneluifel/luifel2.1.jpg" alt="missing" width="800">
+    <img src="Media/zonneluifel/luifel2.1.jpg" alt="missing" width="800">
   </figure>
   
     <figure>
-      <img loading="lazy" src="Media/zonneluifel/zonneluifel4.jpg" alt="missing" width="800">
+      <img src="Media/zonneluifel/zonneluifel4.jpg" alt="missing" width="800">
       <figcaption>Tegen het splijten van het hout vond men dé oplossing, twee houtdraadbouten erdoor - hoppakeetje!</figcaption>
     </figure>
 
   <figure>
-    <img loading="lazy" src="Media/zonneluifel/zonneluifel3.jpg" alt="missing" width="800">
+    <img src="Media/zonneluifel/zonneluifel3.jpg" alt="missing" width="800">
     <figcaption>De luifel is enorm lang, bijna zo lang als die bus zelf. En die is een kleine 12 meter...</figcaption>
   </figure>
   
   <p>Mijn eerste strijdplan was om mijn vader en zijn vriendin allebei een touw vast te laten houden terwijl ik op het dak zit om te kijken of het goed gaat. Om zo langzaam de luifel naar beneden te laten zakken. Dit was voordat ik besefte hoe zwaar hij is. Toen wist ik dat dat nooit zou werken. Na een poos na te denken kwam ik op het idee om twee takels te gebruiken. Een voorin de bus en een achterin de bus. De "vaste" zijde van de takel maakte ik aan het chassis van de bus vast en het werkende deel aan de luifel. Om de ruiten te beschermen plaatste ik tijdelijk wat houten balken langs de zijkant. Samen met pa verliep dit plan heel mooi!</p>
 
   <figure>
-    <img loading="lazy" src="Media/zonneluifel/zonneluifel5.jpg" alt="missing" width="800">
+    <img src="Media/zonneluifel/zonneluifel5.jpg" alt="missing" width="800">
     <figcaption>Twee balken aan elkaar schroeven om de juiste lengte te krijgen.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/zonneluifel/luifel5.jpg" alt="missing" width="800">
+    <img src="Media/zonneluifel/luifel5.jpg" alt="missing" width="800">
     <figcaption>Balken tegen de zijkant ter bescherming van het glas.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/zonneluifel/luifel6.jpg" alt="missing" width="800">
+    <img src="Media/zonneluifel/luifel6.jpg" alt="missing" width="800">
     <figcaption>Takels gemonteerd in de bus.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/zonneluifel/luifel7.jpg" alt="missing" width="800">
+    <img src="Media/zonneluifel/luifel7.jpg" alt="missing" width="800">
     <figcaption>Luifel in de stroppen.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/zonneluifel/luifel8.jpg" alt="missing" width="800">
+    <img src="Media/zonneluifel/luifel8.jpg" alt="missing" width="800">
     <figcaption>De luifel eerst over de rand geduwd en dan doet zwaartekracht de rest...</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/zonneluifel/luifel9.jpg" alt="missing" width="800">
+    <img src="Media/zonneluifel/luifel9.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/zonneluifel/luifel10.jpg" alt="missing" width="800">
+    <img src="Media/zonneluifel/luifel10.jpg" alt="missing" width="800">
     <figcaption>Langzaam...</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/zonneluifel/luifel11.jpg" alt="missing" width="800">
+    <img src="Media/zonneluifel/luifel11.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/zonneluifel/luifel12.jpg" alt="missing" width="800">
+    <img src="Media/zonneluifel/luifel12.jpg" alt="missing" width="800">
     <figcaption>Soepeltjes :)</figcaption>
   </figure>
 
   <!-- 13 - Het dak -->
-  <h2 id="het_dak" class="heading">13 - Het dak</h2>
+  <h2 id="het_dak">13 - Het dak</h2>
   <span class="date">28 juli 2024</span> 
   <p>Het dak heeft óók onderhoud nodig. Deels door ouderdom, deels doordat mensen een zonneluifel hebben gemonteerd... Gaten! In het polyester dak zitten een aantal kleine beschadigingen en gaten. Echt lekken doet het niet, maar ik wil het dak wel dicht hebben voor de winter. Gelukkig laat polyester zich makkelijk repareren. </p>
 
   <p>De kitnaden worden vernieuwd en het dak voorzien van een nieuwe verflaag. Als het me lukt qua tijd wil ik de airco en de ventilatorkanalen ook nog verwijderen (zie onderstaande foto). Waar de ventilator kanalen en de schuifluiken zitten wil ik opklapbare ramen plaatsen. Dit zorgt voor meer licht binnen maar ook een betere ventilatie.</p>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak1.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak1.jpg" alt="missing" width="800">
     <figcaption>Het dak vóór de reparatie (van achteren gezien).</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak2.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak2.jpg" alt="missing" width="800">
     <figcaption>Het dak vóór de reparatie (van voor gezien).</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak4.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak4.jpg" alt="missing" width="800">
     <figcaption>Ik ben aan de voorkant begonnen. Ik heb de televisie-antenne gedemonteerd en de gaten van de radio-antennes gedicht met polyester.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak6.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak6.jpg" alt="missing" width="800">
     <figcaption>Hier heb ik heb gat van de televisie-antenne ook gedicht en ben ik bezig de lijmresten van de bitumentape te verwijderen.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak5.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak5.jpg" alt="missing" width="800">
     <figcaption>Ook de gaten die zijn overgebleven van de zonneluifel gedicht met polyester.</figcaption>
   </figure>
   
     <figure>
-      <img loading="lazy" src="Media/dak/dak7.jpg" alt="missing" width="800">
+      <img src="Media/dak/dak7.jpg" alt="missing" width="800">
       <figcaption>Plamuren en schuren.</figcaption>
     </figure>
   
     <figure>
-      <img loading="lazy" src="Media/dak/dak9.1.jpg" alt="missing" width="800">
+      <img src="Media/dak/dak9.1.jpg" alt="missing" width="800">
       <figcaption>De hoeken waren al eens "gerepareerd", maar dit was niet goed.</figcaption>
     </figure>
     
     <figure>
-      <img loading="lazy" src="Media/dak/dak8.jpg" alt="missing" width="800">
+      <img src="Media/dak/dak8.jpg" alt="missing" width="800">
       <figcaption>Het valt me mee hoe snel ik een glad resultaat kon behalen. Ik heb 2 componenten plamuur gebruikt. Dit hecht goed, wordt goed hard maar laat zich wel mooi schuren.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak9.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak9.jpg" alt="missing" width="800">
     <figcaption>Even een biertje op het dak om A mijn werk te bewonderen en B om het weekend in te luiden! Als ik daar zit denk ik: een dakterras, hoe vet zou dat zijn....?</figcaption>
   </figure>
 
     <!-- Roest op de zijkant -->
-    <h3 id="roest_op_de_zijkant" class="sub-heading">Roest op de zijkant</h3>
+    <h3 id="roest_op_de_zijkant">Roest op de zijkant</h3>
     <span class="date">16 augustus 2024</span> 
     <p>Op de zijkanten van het dak van de bus zijn rubberen strippen gelijmd tegen indringing van water. Op sommige plekken heeft het rubber gefaald waardoor er water naar binnen kan. Over het verloop van jaren heeft dit op bepaalde plekken serieuze roest opgeleverd. Dit moet hersteld worden.</p>
-    <img loading="lazy" src="Media/dak/dak10.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak10.jpg" alt="missing" width="800">
     <figcaption>De plek kaalschuren en de rubberen strip verwijderen om te zien tot waar de roest zit.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak12.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak12.jpg" alt="missing" width="800">
     <figcaption>Hier heb ik de rubberen strip verwijderd zodat de schade te zien is. Nu is het een kwestie van de popnagels wegfrezen, een stuk uit het dak zagen, roest behandelen en de plaat weer bevestigen met nieuwe popnagels en montagekit.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak11.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak11.jpg" alt="missing" width="800">
     <figcaption>Test stukje eruit gezaagd om te kijken hoe het in elkaar steekt. Deze plek is behoorlijk verroest.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak13.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak13.jpg" alt="missing" width="800">
     <figcaption>De popnagels vlakgefreesd.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak14.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak14.jpg" alt="missing" width="800">
     <figcaption>Materiaal schuin weggeschuurd ter bevordering van de hechting van de polyestermatten later.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak15.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak15.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak16.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak16.jpg" alt="missing" width="800">
     <figcaption>Een strook polyester ingezaagd om bij de roest te kunnen komen.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak17.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak17.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak18.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak18.jpg" alt="missing" width="800">
     <figcaption>Nu kan de strook eruitgepakt worden.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak22.1.jpeg" alt="missing" width="800">
+    <img src="Media/dak/dak22.1.jpeg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak19.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak19.jpg" alt="missing" width="800">
     <figcaption>Na het verwijderen van de strook moet eerst de oude lijm en de roest verwijderd worden.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak20.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak20.jpg" alt="missing" width="800">
     <figcaption>Na het verwijderen van de lijm en roest is goed te zien hoeveel corrosie er is. Gelukkig is dit de enige plek op het dak wat zo slecht is. Niet slecht na al die jaren!</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak21.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak21.jpg" alt="missing" width="800">
     <figcaption>Het metaal in de roestomvormer en afgedekt met plastic folie tegen vroegtijdig uitdrogen van het middel.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak22.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak22.jpg" alt="missing" width="800">
     <figcaption>Het metaal behandeld met menie. Ondanks dat de roest op bepaalde plekken vrij fors was denk ik niet dat de stijfheid van de constructie in gevaar is. Daarom las ik er niet nieuw materiaal in, maar behandel ik simpelweg de roest. Scheelt een boel tijd.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak23.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak23.jpg" alt="missing" width="800">
     <figcaption>De ployester strook kaal schuren voor de lijm later.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak25.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak25.jpg" alt="missing" width="800">
     <figcaption>Het stukje wat ik eruit had gezaagd eerder. Dit wordt weer verlijmd met de strook.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak26.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak26.jpg" alt="missing" width="800">
     <figcaption>Ook hier de randen schuin ingeslepen voor een betere hechting.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak24.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak24.jpg" alt="missing" width="800">
     <figcaption>Het stukje heb ik aan de achterkant met duct tape bevestigd, dit fungeert zowel tegen het doorlekken van de epoxy als voor het op plek houden van het stukje totdat de epoxy droog is.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak29.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak29.jpg" alt="missing" width="800">
     <figcaption>Hier heb ik de eerste matten met epoxyhars aangebracht op het kleine stukje polyester.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak29.1.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak29.1.jpg" alt="missing" width="800">
     <figcaption>Na het mixen van de verharder en de epoxyhars heb je zo'n 5 min om de boel aan te brengen, daarna wordt het knoeterhard!</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak29.4.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak29.4.jpg" alt="missing" width="800">
     <figcaption>Ook de gaten heb ik voorzien van een matje of twee ter versteviging van de gaten voor de popnagels later. Bij het wegslijpen van de originele popnagels is her en der wat materiaal van het polyester verloren gegaan, vandaar.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak29.2.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak29.2.jpg" alt="missing" width="800">
     <figcaption>Na uitharding kan de boel weer vlakgeschuurd worden.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak29.3.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak29.3.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak27.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak27.jpg" alt="missing" width="800">
     <figcaption>Ondertussen een zeil tegen de regen, tot dat het dak weer dicht is.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak28.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak28.jpg" alt="missing" width="800">
     <figcaption>Strak hè! :D</figcaption>
   </figure>
 
   <p>Toen was het tijd om de plaat erin te lijmen en te "poppen"!</p>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak30.1.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak30.1.jpg" alt="missing" width="800">
     <figcaption>Beetje Polymax en plakken maar!</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak30.3.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak30.3.jpg" alt="missing" width="800">
     <figcaption>Na het aanbrengen van de popnagels! Dat viel niet mee trouwens! Dit zijn best grote popnagels, en die hebben veel kracht nodig. Ik kon dat maar net leveren met mijn popnageltang, die voor kleinere popnagels bedoeld is.. maar het is gelukt! De kit loopt eruit, dus er is genoeg druk, wat betekent dat de popnagels goed klemmen.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak30.2.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak30.2.jpg" alt="missing" width="800">
     <figcaption>Plaatje er weer in. Bijna alsof er niks gebeurd is ;) .</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak30.4.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak30.4.jpg" alt="missing" width="800">
     <figcaption>Tot slot kan ik de zaagsnede weer dichtplakken met epoxy (bakstenen zijn een handige hulp bij het uitlijnen van de naad). Dan plamuren en schuren en verven!</figcaption>
   </figure>
   
   <!-- Slopen van de airco -->
-  <h3 id="slopen_van_de_airco" class="sub-heading">Slopen van de airco</h3>
+  <h3 id="slopen_van_de_airco">Slopen van de airco</h3>
   <span class="date">18 augustus 2024</span> 
   <p>Afgelopen weekend heb ik behoorlijk wat meters kunnen maken! Ik was bezig met reparaties aan het dak en dacht: "ik trek die airco er ook af". En zo geschiedde het. Met mijn nieuwe speeltje -de reciprozaag- was het klusje vrij snel geklaard.</p>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak35.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak35.jpg" alt="missing" width="800">
     <figcaption>Eerst de condensor-kant (de warme kant) van de airco slopen. Hier staat nog één van de koperen warmte(buizen)-wisselaar overeind. In de verte liggen ventilatoren en een in stukken gezaagde deksel.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak34.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak34.jpg" alt="missing" width="800">
     <figcaption>De condensor-kant van de airco is gesloopt en in stukken gezaagd. Daarna was het tijd voor de verdamper-kant van de airco (de koude kant).</figcaption>
   </figure>
     
   <figure>
-    <img loading="lazy" src="Media/dak/dak32.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak32.jpg" alt="missing" width="800">
     <figcaption>Airco gecontroleerd op 8 oktober 1982 door Duuz en Haku. Bedankt Duuz en Haku!</figcaption>
   </figure>
       
   <figure>
-    <img loading="lazy" src="Media/dak/dak31.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak31.jpg" alt="missing" width="800">
     <figcaption>In dit deel van de airco vond ik nog twee heerlijke Grolschjes! Die hebben de vorige heren onder andere in de airco meegesmokkeld naar de Zwarte Cross. Meenemen! Ze waren "houdbaar" (bier bederft eigenlijk niet) tot jan 2024. Maar ze smaakten nog prima!</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak33.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak33.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak36.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak36.jpg" alt="missing" width="800">
     <figcaption>De bus volgeladen met het oud-ijzer, aluminium, koper en andere rommel. Klaar voor een bezoekje aan de oud-ijzerboer en de stort.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak37.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak37.jpg" alt="missing" width="800">
     <figcaption>En voilá, na een paar uurtjes beuken! Dat scheelt ruimte!</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak38.1.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak38.1.jpg" alt="missing" width="800">
     <figcaption>De gaten afdekken met zeil tegen de regen.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak38.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak38.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak38.2.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak38.2.jpg" alt="missing" width="800">
   </figure>
 
   <!-- Airco gaten dichten -->
-  <h3 id="airco_gaten_dichten" class="sub-heading">Airco gaten dichten</h3>
+  <h3 id="airco_gaten_dichten">Airco gaten dichten</h3>
   <span class="date">25 augustus 2024</span> 
   <p>Door het demonteren van de airco kwamen er drie rechthoekige gaten bloot te liggen. Deze moesten natuurlijk weer dicht, en in het kader van recycling heb ik daar wat moois op gevonden! (Al zeg ik het zelf)</p>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak39.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak39.jpg" alt="missing" width="800">
     <figcaption>De deksel van de airco is van hetzelfde materiaal als het dak (polyester), dus ik dacht... die kan ik daar mooi voor gebruiken! Het gaat anders toch naar de stort.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak40.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak40.jpg" alt="missing" width="800">
   </figure>
 
   <p>Toen moest ik nog een manier vinden om de stukken in het gat te leggen zonder dat ze er doorheen vallen.... Uiteindelijk kwam ik op de volgende oplossing:</p>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak41.1.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak41.1.jpg" alt="missing" width="800">
     <figcaption>Ik lijm wat latjes op de platen, dat kan ik er later weer vanaf halen. Ik dacht op dit moment dat dit niet zoveel kit was. Toen het weer los moest besefte ik dat ik hier veel minder kit had moeten gebruiken.. wat is die kit (Bison Polymax) sterk haha. Leermomentje.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak41.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak41.jpg" alt="missing" width="800">
     <figcaption>Alle platen voorzien van latjes (resthout).</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak42.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak42.jpg" alt="missing" width="800">
     <figcaption>En zo passen ze mooi en liggen ze mooi vlak.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak43.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak43.jpg" alt="missing" width="800">
     <figcaption>Alle platen op hun plaats.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak44.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak44.jpg" alt="missing" width="800">
     <figcaption>Het was bloedheet in deze week, dus ik heb een parasol gekocht. Hier stond hij net. Hij heeft denk ik 5 minuten gestaan voordat hij door een windvlaag met voet en al van het dak kneiterde..</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak45.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak45.jpg" alt="missing" width="800">
     <figcaption>Eerst polyester matjes tussen de houtjes lijmen. Zodra die uitgehard waren, verwijderde ik stap voor stap de houtjes en de kit weer.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak47.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak47.jpg" alt="missing" width="800">
     <figcaption>De voet kon ik na de val repareren en verstevigen, maar de voet bleek niet zwaar genoeg. Dus in plaats daarvan legde ik de parasol op de grond en bevestigde ik het met touw aan de bus zodat hij niet meer wegwaait. Dat werkt prima. Hier ben ik al een eind op weg met de epoxy en de latjes zijn er al af.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak46.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak46.jpg" alt="missing" width="800">
     <figcaption>Nog twee latjes te gaan hier. Lekker uit de zon werken. Fijn bij 34 graden...</figcaption>
   </figure>
 
   <p>Door de spanningen in het polyester dak (en de ouderdom) golft het dak her en der een beetje. Om de vorm van het dak aan de nieuwe platen mee te geven en geen vlakke stukken te creëren waar water in blijft staan, ging ik als volgt te werk. Eerst lijmde ik de nieuwe platen  aan de zijkanten slechts deels vast. Het midden kun je dan omhoog drukken zodat je een boog krijgt. In deze vorm heb ik het gelijmd en na droging van de epoxy houdt het zijn vorm.</p>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak48.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak48.jpg" alt="missing" width="800">
     <figcaption>Hier heb ik om de plaat in een boog te krijgen heb ik aan de onderkant een schroef gebruikt om druk uit te oefenen op de plaat.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak49.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak49.jpg" alt="missing" width="800">
     <figcaption>Hier heb ik het dak weer helemaal dicht.</figcaption>
   </figure>
   
   <!-- Voorbereidingen voor het verven van het dak -->
-  <h3 id="voorbereidingen_voor_het_verven_van_het_dak" class="sub-heading">Voorbereidingen voor het verven van het dak</h3>
+  <h3 id="voorbereidingen_voor_het_verven_van_het_dak">Voorbereidingen voor het verven van het dak</h3>
   <span class="date">1 september 2024</span> 
   <p>Nu de grote reparaties klaar zijn kon ik me richten op het verven van het dak. Maar zoals gebruikelijk gaat er veel meer tijd in de voorbereiding zitten dan het verven zelf.</p>
     
   <figure>
-    <img loading="lazy" src="Media/dak/dak53.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak53.jpg" alt="missing" width="800">
     <figcaption>Eerst was het zaak om de oude rubberen strip te verwijderen. Deze dient ter afdichting van de popnagels en de rand van het dak. Het falen van deze strip heeft tot de roest geleid die ik eerder behandeld heb.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak54.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak54.jpg" alt="missing" width="800">
     <figcaption>Ongeveer 30 meter aan rubber strip te verwijderen :) .</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak56.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak56.jpg" alt="missing" width="800">
     <figcaption>Hier de rubber strip van rechterkant eraf. Ook de metalen strip voorop en achterop de bus opnieuw geverfd.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak57.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak57.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak58.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak58.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak55.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak55.jpg" alt="missing" width="800">
   </figure>
   
   <p>Na het verwijderen van het oude rubber heb ik de naden opnieuw afgeplakt. Dit heb ik gedaan met bitumentape. Erg kleverig en uitstekend in waterafdichting, net wat ik moet hebben.</p>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak59.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak59.jpg" alt="missing" width="800">
     <figcaption>Hier heb ik de rechterkant van de bus voorzien van bitumen.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak59.1.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak59.1.jpg" alt="missing" width="800">
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak60.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak60.jpg" alt="missing" width="800">
     <figcaption>Ook de voorkant en verder met de linkerkant.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak62.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak62.jpg" alt="missing" width="800">
     <figcaption>De rechter hoek.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak61.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak61.jpg" alt="missing" width="800">
     <figcaption>De linker hoek.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak66.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak66.jpg" alt="missing" width="800">
     <figcaption>De metalen strip op de linker achterhoek zat los en moest opnieuw bevestigd worden.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak63.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak63.jpg" alt="missing" width="800">
     <figcaption>De linker achterhoek bijna klaar.</figcaption>
   </figure>
 
   <figure>
-    <img loading="lazy" src="Media/dak/dak65.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak65.jpg" alt="missing" width="800">
     <figcaption>De linker achterhoek klaar.</figcaption>
   </figure>
   
@@ -1650,168 +1602,168 @@
   <p>Terwijl ik bezig was met de randen werd ik bijgestaan door Larissa!</p>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak52.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak52.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak50.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak50.jpg" alt="missing" width="800">
     <figcaption>Larissa schuurt de nieuwe polyester platen.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak51.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak51.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak52.1.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak52.1.jpg" alt="missing" width="800">
     <figcaption>“The objective of cleaning is not just to clean, but to feel happiness living within that environment.” ~ Marie Kondo</figcaption>
   </figure>
   
   <!-- Het verven van het dak -->
-  <h3 id="het_verven_van_het_dak" class="sub-heading">Het verven van het dak</h3>
+  <h3 id="het_verven_van_het_dak">Het verven van het dak</h3>
   <span class="date">15 september 2024</span> 
   <p>Vandaag hebben ik en hulp van de dag Maarten(!) een begin gemaakt met de grondverf.</p>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak67.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak67.jpg" alt="missing" width="800">
     <figcaption>Voor het verven van het polyester dak ga ik de bootverf van Epifanes proberen. Het is ontwikkeld voor boten (van origine althans) en is zeer geschikt voor (o.a.) polyester. Bovendien heb ik er zeer goede ervaring mee met het verven van onze ploegboot (zie foto's!).</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak67.1.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak67.1.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak69.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak69.jpg" alt="missing" width="800">
     <figcaption>Eerst het dak voorbereiden. schuren etc.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak70.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak70.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak75.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak75.jpg" alt="missing" width="800">
     <figcaption>Hierna konden we beginnen met de primer.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak73.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak73.jpg" alt="missing" width="800">
     <figcaption>We zijn tot hier gekomen die dag. We konden sowieso niet alles in één keer doen ivm het belopen van het dak, maar ik moet her en der ook nog wat kleine dingetjes afwerken. Het aanbrengen van een laag verf is een goede manier om oneffenheden en gebreken als scheurtjes in de plamuur aan het licht te brengen.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak77.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak77.jpg" alt="missing" width="800">
     <figcaption>Zo moest ik aan de zijkant wat plamuur- en schuurwerk doen.</figcaption>
   </figure>
   
   <!-- Verder met het verven van het dak -->
-  <h3 id="verder_met_het_verven_van_het_dak" class="sub-heading">Verder met het verven van het dak</h3>
+  <h3 id="verder_met_het_verven_van_het_dak">Verder met het verven van het dak</h3>
   <span class="date">29 september 2024</span> 
   <p>We gaan weer verder de primer. Deze keer sta ik er alleen voor, maar dat mag de pret niet drukken.</p>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak76.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak76.jpg" alt="missing" width="800">
     <figcaption>Sochtends vroeg was het stalen kokerframe van de bus goed te zien door de condensvorming.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak71.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak71.jpg" alt="missing" width="800">
     <figcaption>Na het schuren van de nieuwe platen in de airco gaten weer verder met verven.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak78.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak78.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak72.1.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak72.1.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak64.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak64.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak72.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak72.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak74.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak74.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak74.1.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak74.1.jpg" alt="missing" width="800">
     <figcaption>De airco platen opnieuw plamuren en schuren.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak74.2.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak74.2.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak79.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak79.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak80.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak80.jpg" alt="missing" width="800">
     <figcaption>Na het verven van de hoeken aan de voorkant heb ik ze voorzien van epoxyplamuur en later weer in vorm geschuurd.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak81.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak81.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak82.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak82.jpg" alt="missing" width="800">
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak83.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak83.jpg" alt="missing" width="800">
     <figcaption>Nog wat "spuitplamuur" geprobeerd, maar dit was te dun om iets nuttigs toe te voegen.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak84.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak84.jpg" alt="missing" width="800">
     <figcaption>Het dak volledig in de primer!.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak85.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak85.jpg" alt="missing" width="800">
   </figure>
   
   <!-- Het aflakken van het dak -->
-  <h3 id="het_aflakken_van_het_dak" class="sub-heading">Het aflakken van het dak</h3>
+  <h3 id="het_aflakken_van_het_dak">Het aflakken van het dak</h3>
   <span class="date">27 oktober 2024</span> 
   <p>Vandaag was het een mooie dag om te verven. Eindelijk. Nouja het was wel spannend, want het spande erom of het zou gaan regenen.</p>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak86.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak86.jpg" alt="missing" width="800">
     <figcaption>Na het dak opnieuw te hebben geschuurd en schoongemaakt, kon ik beginnen met de witte aflak.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak87.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak87.jpg" alt="missing" width="800">
     <figcaption>Na het afplakken kon er gerold worden.</figcaption>
   </figure>
   
   <figure>
-    <img loading="lazy" src="Media/dak/dak88.jpg" alt="missing" width="800">
+    <img src="Media/dak/dak88.jpg" alt="missing" width="800">
   </figure>
   
   <!-- Het resultaat! -->
-  <h3 id="het_resultaat" class="sub-heading">Het resultaat!</h3>
+  <h3 id="het_resultaat">Het resultaat!</h3>
     
     <figure>
-      <img loading="lazy" src="Media/dak/dak90.jpg" alt="missing" width="800">
+      <img src="Media/dak/dak90.jpg" alt="missing" width="800">
     </figure>
     
     <figure>
-      <img loading="lazy" src="Media/dak/dak91.jpg" alt="missing" width="800">
+      <img src="Media/dak/dak91.jpg" alt="missing" width="800">
     </figure>
 
   <!-- Wordt vervolgd... -->
-  <h3 id="wordt_vervolgd" class="sub-heading">Wordt vervolgd...</h3>
+  <h3 id="wordt_vervolgd">Wordt vervolgd...</h3>
     
   <p>Momenteel zit ik in Denemarken voor mijn afstudeeronderzoek. Wanneer ik terug ben ga ik weer verder!</p>
 
@@ -1823,6 +1775,57 @@
   <button id="backToTopBtn" title="Terug naar boven">↑</button>
 
 </body>
+
+<script>
+  function setupNewUpdateBadges() {
+  const badges = document.querySelectorAll('.new-update-badge');
+  
+  badges.forEach(badge => {
+    badge.addEventListener('click', function(event) {
+      event.stopPropagation(); // Prevent the click from reaching the parent <a>
+      event.preventDefault(); // Prevent default link behavior
+      
+      const link = this.getAttribute('data-link');
+      if (link) {
+        const element = document.querySelector(link);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+}
+
+  // Run setup when DOM is ready
+  document.addEventListener('DOMContentLoaded', setupNewUpdateBadges);
+
+  // Show button when page is scrolled down
+  window.addEventListener('scroll', function() {
+    const btn = document.getElementById('backToTopBtn');
+    if (btn) {
+      if (window.pageYOffset > 0) {
+        btn.style.display = 'block';
+      } else {
+        btn.style.display = 'none';
+      }
+    }
+  });
+
+  // Scroll to top when button is clicked
+  document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.getElementById('backToTopBtn');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+  });
+</script>
+
+
 </html>
 
 
