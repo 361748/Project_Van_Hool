@@ -1837,14 +1837,32 @@
         const targetElement = document.querySelector(targetId);
         
         if (targetElement) {
-          // Add a small offset to ensure the heading is visible
+          // Get the initial position
           const headerOffset = 20;
-          const elementPosition = targetElement.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          const initialPosition = targetElement.offsetTop - headerOffset;
           
+          // Scroll to initial position
           window.scrollTo({
-            top: offsetPosition,
+            top: initialPosition,
             behavior: 'smooth'
+          });
+          
+          // After scrolling completes, check if we need to re-adjust
+          setTimeout(() => {
+            const currentPosition = targetElement.offsetTop - headerOffset;
+            if (Math.abs(window.pageYOffset - currentPosition) > 10) {
+              window.scrollTo({
+                top: currentPosition,
+                behavior: 'auto' // Instant adjustment, no animation
+              });
+            }
+          }, 500); // Wait for most layout shifts to occur
+          
+          // Also set explicit heights on images to prevent layout shifts
+          document.querySelectorAll('img').forEach(img => {
+            if (img.width && !img.height) {
+              img.height = img.width * 0.75; // Assuming 4:3 aspect ratio
+            }
           });
         }
       });
