@@ -34,6 +34,22 @@ video {
   height: auto;
 }
 
+/* If viewport width is 600px or less, change width settings */
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 90%;
+  }
+  img {
+    max-width: 100%;
+  }
+  video {
+    max-width: 100%;
+  }
+  figcaption {
+    max-width: 100%;
+  }
+}
+
 .date {
   background-color: #ccc;
   padding: 0.3em 0.6em;
@@ -55,8 +71,8 @@ video {
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 5%; /* Place the button at 5% from the bottom of the page */
-  right: 47%; /* Place the button 48.5% from the right */
+  bottom: 5%; /* Place the button at x % from the bottom of the page */
+  right: 47%; /* Place the button x % from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
@@ -70,4 +86,12 @@ video {
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* If viewport width is 600px or less, change width settings */
+@media screen and (max-width: 600px) {
+  #myBtn {
+    bottom: 1%;
+    right: 34%;
+  }
 }
