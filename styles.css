@@ -14,10 +14,19 @@ body {
   max-width: 60%;
 }
 
+a {
+  text-decoration: none;
+}
+
+table_of_contents {
+  line-height: 2em;
+}
+
 img {
   max-width: 50%;
   height: auto;
   display: block;
+  margin-bottom: 0.2em;
 }
 
 figcaption {
@@ -72,14 +81,14 @@ video {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 5%; /* Place the button at x % from the bottom of the page */
-  right: 47%; /* Place the button x % from the right */
+  right: 47.5%; /* Place the button x % from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: darkblue; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 1em; /* Some padding */
+  padding: 0.5em; /* Some padding */
   border-radius: 0.6em; /* Rounded corners */
   font-size: 1em; /* Increase font size */
 }
@@ -92,6 +101,6 @@ video {
 @media screen and (max-width: 600px) {
   #myBtn {
     bottom: 1%;
-    right: 34%;
+    right: 36%;
   }
 }
