@@ -135,12 +135,12 @@ hr {
 /* If viewport width is 600px or less, change width settings */
 @media screen and (max-width: 600px) {
   #myBtn {
-    bottom: 4%;
+    bottom: 9%;
     right: 36%;
   }
 
   #myBtn_bottom {
-    bottom: 1%;
-    right: 36%;
+    bottom: 4%;
+    right: 32%;
   }
 }
